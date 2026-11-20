@@ -60,9 +60,9 @@
       "hiddenFromStrip": false,
       "media": {
         "format": "webp",
-        "previewUrl": "media/panos/nygmet_v2_aero_115m_model/preview.webp",
+        "previewUrl": "media/panos/nygmet_v3_aero_115m_model/preview.webp",
         "previewType": "equirect",
-        "thumbUrl": "media/panos/nygmet_v2_aero_115m_model/thumbnail.webp",
+        "thumbUrl": "media/panos/nygmet_v3_aero_115m_model/thumbnail.webp",
         "levels": [
           {
             "index": 0,
@@ -70,7 +70,7 @@
             "tileSize": 512,
             "cols": 2,
             "rows": 2,
-            "urlTemplate": "media/panos/nygmet_v2_aero_115m_model/{face}/0/{row}_{col}.webp"
+            "urlTemplate": "media/panos/nygmet_v3_aero_115m_model/{face}/0/{row}_{col}.webp"
           },
           {
             "index": 1,
@@ -78,7 +78,7 @@
             "tileSize": 512,
             "cols": 4,
             "rows": 4,
-            "urlTemplate": "media/panos/nygmet_v2_aero_115m_model/{face}/1/{row}_{col}.webp"
+            "urlTemplate": "media/panos/nygmet_v3_aero_115m_model/{face}/1/{row}_{col}.webp"
           },
           {
             "index": 2,
@@ -86,7 +86,7 @@
             "tileSize": 512,
             "cols": 8,
             "rows": 8,
-            "urlTemplate": "media/panos/nygmet_v2_aero_115m_model/{face}/2/{row}_{col}.webp"
+            "urlTemplate": "media/panos/nygmet_v3_aero_115m_model/{face}/2/{row}_{col}.webp"
           }
         ]
       },
@@ -425,9 +425,9 @@
       "hiddenFromStrip": false,
       "media": {
         "format": "webp",
-        "previewUrl": "media/panos/nygmet_v2_aero_155m_model/preview.webp",
+        "previewUrl": "media/panos/nygmet_v3_aero_155m_model/preview.webp",
         "previewType": "equirect",
-        "thumbUrl": "media/panos/nygmet_v2_aero_155m_model/thumbnail.webp",
+        "thumbUrl": "media/panos/nygmet_v3_aero_155m_model/thumbnail.webp",
         "levels": [
           {
             "index": 0,
@@ -435,7 +435,7 @@
             "tileSize": 512,
             "cols": 2,
             "rows": 2,
-            "urlTemplate": "media/panos/nygmet_v2_aero_155m_model/{face}/0/{row}_{col}.webp"
+            "urlTemplate": "media/panos/nygmet_v3_aero_155m_model/{face}/0/{row}_{col}.webp"
           },
           {
             "index": 1,
@@ -443,7 +443,7 @@
             "tileSize": 512,
             "cols": 4,
             "rows": 4,
-            "urlTemplate": "media/panos/nygmet_v2_aero_155m_model/{face}/1/{row}_{col}.webp"
+            "urlTemplate": "media/panos/nygmet_v3_aero_155m_model/{face}/1/{row}_{col}.webp"
           },
           {
             "index": 2,
@@ -451,7 +451,7 @@
             "tileSize": 512,
             "cols": 8,
             "rows": 8,
-            "urlTemplate": "media/panos/nygmet_v2_aero_155m_model/{face}/2/{row}_{col}.webp"
+            "urlTemplate": "media/panos/nygmet_v3_aero_155m_model/{face}/2/{row}_{col}.webp"
           }
         ]
       },
@@ -2573,7 +2573,7 @@
     ]
   },
   "sitePlan": {
-    "imageUrl": "media/custom/siteplan_nygmet.webp",
+    "imageUrl": "media/custom/siteplan_nygmet_v2.webp",
     "aspectRatio": 2.45,
     "title": {
       "ru": "Схема двора",
