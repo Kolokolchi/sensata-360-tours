@@ -134,7 +134,7 @@
     p.className = 'panel';
     p.type = 'button';
     p.innerHTML =
-      '<img src="' + esc(t.cover) + '" alt="" loading="' + (i < 3 ? 'eager' : 'lazy') + '" />' +
+      '<img src="' + esc(t.cover) + '" alt="" decoding="async" />' +
       '<span class="num">' + no + '</span>' +
       (t.badge ? '<span class="badge">' + esc(t.badge) + '</span>' : '') +
       '<span class="meta"><h2>' + esc(t.title) + '</h2><span class="more"><div>' +
