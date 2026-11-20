@@ -1,0 +1,2277 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "04_olympic_park",
+  "title": {
+    "ru": "ЖК OLYMPIC PARK",
+    "kz": "OLYMPIC PARK ТК",
+    "en": "OLYMPIC PARK"
+  },
+  "classBadge": {
+    "ru": "Комфорт-класс",
+    "kz": "Комфорт-класс",
+    "en": "Comfort Class"
+  },
+  "address": {
+    "ru": "пр. Рыскулова / ул. Момышулы",
+    "kz": "Рысқұлов даңғ. / Момышұлы к-сі",
+    "en": "Ryskulov Ave / Momyshuly St"
+  },
+  "location": {
+    "lat": 43.259789,
+    "lng": 76.819081,
+    "city": {
+      "ru": "Алматы",
+      "kz": "Алматы",
+      "en": "Almaty"
+    }
+  },
+  "theme": {
+    "bgDark": "#0d0e12",
+    "glassBg": "rgba(15, 17, 23, 0.72)",
+    "accent": "#c5a47e",
+    "accentHover": "#dfc09a",
+    "secondary": "#2d2e83",
+    "brandName": "SENSATA GROUP"
+  },
+  "defaultSceneId": "pano20958",
+  "enableLittlePlanetIntro": true,
+  "scenes": [
+    {
+      "id": "pano20958",
+      "zone": "aero",
+      "title": {
+        "ru": "Аэропано 250 m",
+        "kz": "Аэропанорама 250 m",
+        "en": "Aerial 250 m"
+      },
+      "initialView": {
+        "yaw": 62.31,
+        "pitch": -61.7,
+        "fov": 55.9,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": -90,
+      "gps": {
+        "lat": 43.25445,
+        "lng": 76.815141666667,
+        "altitudeMeters": 250
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_20958/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_20958/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_20958/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 1536,
+            "tileSize": 512,
+            "cols": 3,
+            "rows": 3,
+            "urlTemplate": "media/main/pano_20958/{faceIndex}/1/{row}_{col}.jpg"
+          },
+          {
+            "index": 2,
+            "faceSize": 2560,
+            "tileSize": 512,
+            "cols": 5,
+            "rows": 5,
+            "urlTemplate": "media/main/pano_20958/{faceIndex}/2/{row}_{col}.jpg"
+          },
+          {
+            "index": 3,
+            "faceSize": 5120,
+            "tileSize": 512,
+            "cols": 10,
+            "rows": 10,
+            "urlTemplate": "media/main/pano_20958/{faceIndex}/3/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint20960",
+          "type": "poi",
+          "yaw": -97.23,
+          "pitch": -12.71,
+          "title": {
+            "ru": "Almaty Arena",
+            "kz": "Almaty Arena",
+            "en": "Almaty Arena"
+          },
+          "category": "sport",
+          "distanceText": {
+            "ru": "1.1 км · 14 мин",
+            "kz": "1.1 км · 14 мин",
+            "en": "1.1 km · 14 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.264342,
+          "lng": 76.813419
+        },
+        {
+          "id": "spotpoint20961",
+          "type": "poi",
+          "yaw": -130.02,
+          "pitch": -35.69,
+          "title": {
+            "ru": "Ясли сад №37",
+            "kz": "Ясли сад №37",
+            "en": "Ясли сад №37"
+          },
+          "category": "kindergarten",
+          "distanceText": {
+            "ru": "350 м · 4 мин",
+            "kz": "350 м · 4 мин",
+            "en": "350 m · 4 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.256858,
+          "lng": 76.812366
+        },
+        {
+          "id": "spotpoint20962",
+          "type": "poi",
+          "yaw": -82.53,
+          "pitch": -18.53,
+          "title": {
+            "ru": "Театр традиционного · искусства Алатау",
+            "kz": "Театр традиционного · искусства Алатау",
+            "en": "Театр традиционного · искусства Алатау"
+          },
+          "category": "culture",
+          "distanceText": {
+            "ru": "750 м · 9 мин",
+            "kz": "750 м · 9 мин",
+            "en": "750 m · 9 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.26113,
+          "lng": 76.816344
+        },
+        {
+          "id": "spotpoint20963",
+          "type": "poi",
+          "yaw": 72.39,
+          "pitch": -32.06,
+          "title": {
+            "ru": "Ясли сад №95",
+            "kz": "Ясли сад №95",
+            "en": "Ясли сад №95"
+          },
+          "category": "kindergarten",
+          "distanceText": {
+            "ru": "400 м · 5 мин",
+            "kz": "400 м · 5 мин",
+            "en": "400 m · 5 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.251025,
+          "lng": 76.816634
+        },
+        {
+          "id": "spotpoint20964",
+          "type": "poi",
+          "yaw": 58.71,
+          "pitch": -9.48,
+          "title": {
+            "ru": "Общеобразовательная · школа №181",
+            "kz": "Жалпы білім беретін мектеп №181",
+            "en": "Public School №181"
+          },
+          "category": "school",
+          "distanceText": {
+            "ru": "1.5 км · 19 мин",
+            "kz": "1.5 км · 19 мин",
+            "en": "1.5 km · 19 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.242935,
+          "lng": 76.824751
+        },
+        {
+          "id": "spotpoint20965",
+          "type": "poi",
+          "yaw": 49.25,
+          "pitch": -15.37,
+          "title": {
+            "ru": "Qazaq school",
+            "kz": "Qazaq school",
+            "en": "Qazaq school"
+          },
+          "category": "school",
+          "distanceText": {
+            "ru": "910 м · 11 мин",
+            "kz": "910 м · 11 мин",
+            "en": "910 m · 11 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.248257,
+          "lng": 76.822468
+        },
+        {
+          "id": "spotpoint20966",
+          "type": "poi",
+          "yaw": 74.46,
+          "pitch": -24.7,
+          "title": {
+            "ru": "Лицей №178",
+            "kz": "Лицей №178",
+            "en": "Лицей №178"
+          },
+          "category": "school",
+          "distanceText": {
+            "ru": "540 м · 7 мин",
+            "kz": "540 м · 7 мин",
+            "en": "540 m · 7 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.249776,
+          "lng": 76.816926
+        },
+        {
+          "id": "spotpoint20967",
+          "type": "poi",
+          "yaw": 24.74,
+          "pitch": -12.79,
+          "title": {
+            "ru": "Damu зияткерлiк мектебi",
+            "kz": "Damu зияткерлiк мектебi",
+            "en": "Damu зияткерлiк мектебi"
+          },
+          "category": "school",
+          "distanceText": {
+            "ru": "1.1 км · 14 мин",
+            "kz": "1.1 км · 14 мин",
+            "en": "1.1 km · 14 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.250315,
+          "lng": 76.827464
+        },
+        {
+          "id": "spotpoint20968",
+          "type": "poi",
+          "yaw": -23.48,
+          "pitch": -18.79,
+          "title": {
+            "ru": "Joo High School",
+            "kz": "Joo High School",
+            "en": "Joo High School"
+          },
+          "category": "school",
+          "distanceText": {
+            "ru": "730 м · 9 мин",
+            "kz": "730 м · 9 мин",
+            "en": "730 m · 9 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.257063,
+          "lng": 76.8234
+        },
+        {
+          "id": "spotpoint20969",
+          "type": "poi",
+          "yaw": -98.79,
+          "pitch": -36.88,
+          "title": {
+            "ru": "Школа-гимназия №201",
+            "kz": "Мектеп-Гимназия №201",
+            "en": "Gymnasium School №201"
+          },
+          "category": "school",
+          "distanceText": {
+            "ru": "330 м · 4 мин",
+            "kz": "330 м · 4 мин",
+            "en": "330 m · 4 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.25738,
+          "lng": 76.81452
+        },
+        {
+          "id": "spotpoint20970",
+          "type": "poi",
+          "yaw": -96.27,
+          "pitch": -17.7,
+          "title": {
+            "ru": "Школа вокала и музыки · Дианы Шараповой",
+            "kz": "Мектеп вокала и музыки · Дианы Шараповой",
+            "en": "School вокала и музыки · Дианы Шараповой"
+          },
+          "category": "school",
+          "distanceText": {
+            "ru": "780 м · 10 мин",
+            "kz": "780 м · 10 мин",
+            "en": "780 m · 10 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.261415,
+          "lng": 76.814091
+        },
+        {
+          "id": "spotpoint20971",
+          "type": "poi",
+          "yaw": -100.48,
+          "pitch": -11.47,
+          "title": {
+            "ru": "FasTracKids",
+            "kz": "FasTracKids",
+            "en": "FasTracKids"
+          },
+          "category": "kindergarten",
+          "distanceText": {
+            "ru": "1.2 км · 15 мин",
+            "kz": "1.2 км · 15 мин",
+            "en": "1.2 km · 15 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.265315,
+          "lng": 76.812382
+        },
+        {
+          "id": "spotpoint20972",
+          "type": "poi",
+          "yaw": -117.75,
+          "pitch": -20.41,
+          "title": {
+            "ru": "Open Medical Channel",
+            "kz": "Open Medical Channel",
+            "en": "Open Medical Channel"
+          },
+          "category": "medical",
+          "distanceText": {
+            "ru": "670 м · 8 мин",
+            "kz": "670 м · 8 мин",
+            "en": "670 m · 8 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.259776,
+          "lng": 76.811294
+        },
+        {
+          "id": "spotpoint20973",
+          "type": "poi",
+          "yaw": -66.51,
+          "pitch": -19.07,
+          "title": {
+            "ru": "Medical Center",
+            "kz": "Medical Center",
+            "en": "Medical Center"
+          },
+          "category": "medical",
+          "distanceText": {
+            "ru": "720 м · 9 мин",
+            "kz": "720 м · 9 мин",
+            "en": "720 m · 9 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.260382,
+          "lng": 76.818681
+        },
+        {
+          "id": "spotpoint20974",
+          "type": "poi",
+          "yaw": -20.36,
+          "pitch": -18.58,
+          "title": {
+            "ru": "Asia Med Clinic",
+            "kz": "Asia Med Clinic",
+            "en": "Asia Med Clinic"
+          },
+          "category": "medical",
+          "distanceText": {
+            "ru": "740 м · 9 мин",
+            "kz": "740 м · 9 мин",
+            "en": "740 m · 9 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.256763,
+          "lng": 76.823699
+        },
+        {
+          "id": "spotpoint20976",
+          "type": "poi",
+          "yaw": -15.54,
+          "pitch": -6.81,
+          "title": {
+            "ru": "Domillion ТРЦ",
+            "kz": "Domillion ТРЦ",
+            "en": "Domillion Mall"
+          },
+          "category": "mall",
+          "distanceText": {
+            "ru": "1.9 км · 23 мин",
+            "kz": "1.9 км · 23 мин",
+            "en": "1.9 km · 23 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.258902,
+          "lng": 76.837126
+        },
+        {
+          "id": "spotpoint20977",
+          "type": "poi",
+          "yaw": 14.45,
+          "pitch": -6.2,
+          "title": {
+            "ru": "Asia Park ТРЦ",
+            "kz": "Asia Park ТРЦ",
+            "en": "Asia Park Mall"
+          },
+          "category": "mall",
+          "distanceText": {
+            "ru": "1.9 км · 23 мин",
+            "kz": "1.9 км · 23 мин",
+            "en": "1.9 km · 23 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.250303,
+          "lng": 76.837238
+        },
+        {
+          "id": "spotpoint21245",
+          "type": "aero-link",
+          "yaw": 112.61,
+          "pitch": -57.94,
+          "title": {
+            "ru": "ЖК OLYMPIC PARK",
+            "kz": "ЖК OLYMPIC PARK",
+            "en": "ЖК OLYMPIC PARK"
+          },
+          "targetSceneId": "pano21578",
+          "linkVariant": "dive-yard"
+        },
+        {
+          "id": "spotpoint21930",
+          "type": "aero-link",
+          "yaw": 100.05,
+          "pitch": -23.32,
+          "title": {
+            "ru": "5. Аэропано",
+            "kz": "5. Аэропанорама",
+            "en": "5. Aerial"
+          },
+          "targetSceneId": "pano21617",
+          "arrivalYaw": 78.21,
+          "arrivalPitch": -16.61,
+          "arrivalFov": 46.1842,
+          "linkVariant": "drone"
+        },
+        {
+          "id": "spotpoint21932",
+          "type": "aero-link",
+          "yaw": 99.5,
+          "pitch": -46.91,
+          "title": {
+            "ru": "Двор",
+            "kz": "Аула",
+            "en": "Courtyard"
+          },
+          "targetSceneId": "pano21578",
+          "arrivalYaw": -174.15,
+          "arrivalPitch": 0.45,
+          "arrivalFov": 90,
+          "linkVariant": "dive-yard"
+        },
+        {
+          "id": "spotpoint23440",
+          "type": "poi",
+          "yaw": 134.64,
+          "pitch": -32.47,
+          "title": {
+            "ru": "Гимназия №209",
+            "kz": "Гимназия №209",
+            "en": "Gymnasium №209"
+          },
+          "category": "school",
+          "distanceText": {
+            "ru": "390 м · 5 мин",
+            "kz": "390 м · 5 мин",
+            "en": "390 m · 5 min"
+          },
+          "stemHeight": 34,
+          "lat": 43.251957,
+          "lng": 76.811762
+        },
+        {
+          "id": "street_04_olympic_park_1",
+          "type": "street-label",
+          "yaw": 96,
+          "pitch": -28,
+          "title": {
+            "ru": "пр. Рыскулова",
+            "kz": "Рысқұлов даңғ.",
+            "en": "Ryskulov Ave"
+          },
+          "roadAngle": 14,
+          "scale": 1
+        },
+        {
+          "id": "street_04_olympic_park_2",
+          "type": "street-label",
+          "yaw": -112,
+          "pitch": -20,
+          "title": {
+            "ru": "ул. Момышулы",
+            "kz": "Момышұлы к-сі",
+            "en": "Momyshuly St"
+          },
+          "roadAngle": -16,
+          "scale": 1
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano21617",
+      "zone": "aero",
+      "title": {
+        "ru": "5. Аэропано",
+        "kz": "5. Аэропанорама",
+        "en": "5. Aerial"
+      },
+      "initialView": {
+        "yaw": -81.66,
+        "pitch": -26.56,
+        "fov": 61.5,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": -90,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 110
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_21617/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_21617/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_21617/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 1536,
+            "tileSize": 512,
+            "cols": 3,
+            "rows": 3,
+            "urlTemplate": "media/main/pano_21617/{faceIndex}/1/{row}_{col}.jpg"
+          },
+          {
+            "index": 2,
+            "faceSize": 2560,
+            "tileSize": 512,
+            "cols": 5,
+            "rows": 5,
+            "urlTemplate": "media/main/pano_21617/{faceIndex}/2/{row}_{col}.jpg"
+          },
+          {
+            "index": 3,
+            "faceSize": 5120,
+            "tileSize": 512,
+            "cols": 10,
+            "rows": 10,
+            "urlTemplate": "media/main/pano_21617/{faceIndex}/3/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint21650",
+          "type": "aero-link",
+          "yaw": -83.29,
+          "pitch": -23.85,
+          "title": {
+            "ru": "ЖК OLYMPIC PARK",
+            "kz": "ЖК OLYMPIC PARK",
+            "en": "ЖК OLYMPIC PARK"
+          },
+          "targetSceneId": "pano21578",
+          "arrivalYaw": -157.95,
+          "arrivalPitch": -2.25,
+          "arrivalFov": 90,
+          "linkVariant": "dive-yard"
+        },
+        {
+          "id": "spotpoint21651",
+          "type": "aero-link",
+          "yaw": -60.35,
+          "pitch": -5.54,
+          "title": {
+            "ru": "4. Аэропано",
+            "kz": "4. Аэропанорама",
+            "en": "4. Aerial"
+          },
+          "targetSceneId": "pano21583",
+          "arrivalYaw": -50.06,
+          "arrivalPitch": -14.76,
+          "arrivalFov": 50.8027,
+          "linkVariant": "drone"
+        },
+        {
+          "id": "spotpoint21654",
+          "type": "aero-link",
+          "yaw": -76.42,
+          "pitch": 27.03,
+          "title": {
+            "ru": "Аэропано 250 m",
+            "kz": "Аэропанорама 250 m",
+            "en": "Aerial 250 m"
+          },
+          "targetSceneId": "pano20958",
+          "arrivalYaw": -73.24,
+          "arrivalPitch": 25.72,
+          "arrivalFov": 50.8027,
+          "linkVariant": "drone"
+        },
+        {
+          "id": "spotpoint21655",
+          "type": "aero-link",
+          "yaw": -72.72,
+          "pitch": -37.47,
+          "title": {
+            "ru": "Двор",
+            "kz": "Аула",
+            "en": "Courtyard"
+          },
+          "targetSceneId": "pano21578",
+          "arrivalYaw": -149.19,
+          "arrivalPitch": -33.06,
+          "arrivalFov": 61.4712,
+          "linkVariant": "dive-yard"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano21583",
+      "zone": "aero",
+      "title": {
+        "ru": "4. Аэропано",
+        "kz": "4. Аэропанорама",
+        "en": "4. Aerial"
+      },
+      "initialView": {
+        "yaw": 149.4,
+        "pitch": -45.9,
+        "fov": 90,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": -90,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 110
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_21583/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_21583/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_21583/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 2048,
+            "tileSize": 512,
+            "cols": 4,
+            "rows": 4,
+            "urlTemplate": "media/main/pano_21583/{faceIndex}/1/{row}_{col}.jpg"
+          },
+          {
+            "index": 2,
+            "faceSize": 3584,
+            "tileSize": 512,
+            "cols": 7,
+            "rows": 7,
+            "urlTemplate": "media/main/pano_21583/{faceIndex}/2/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint21656",
+          "type": "aero-link",
+          "yaw": 164.77,
+          "pitch": -29.23,
+          "title": {
+            "ru": "ЖК OLYMPIC PARK",
+            "kz": "ЖК OLYMPIC PARK",
+            "en": "ЖК OLYMPIC PARK"
+          },
+          "targetSceneId": "pano21578",
+          "arrivalYaw": 94.05,
+          "arrivalPitch": 0.45,
+          "arrivalFov": 90,
+          "linkVariant": "dive-yard"
+        },
+        {
+          "id": "spotpoint21658",
+          "type": "aero-link",
+          "yaw": 126.71,
+          "pitch": -2.04,
+          "title": {
+            "ru": "5. Аэропано",
+            "kz": "5. Аэропанорама",
+            "en": "5. Aerial"
+          },
+          "targetSceneId": "pano21617",
+          "arrivalYaw": 117.61,
+          "arrivalPitch": 0.13,
+          "arrivalFov": 38.1688,
+          "linkVariant": "drone"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano21578",
+      "zone": "yard",
+      "title": {
+        "ru": "Двор",
+        "kz": "Аула",
+        "en": "Courtyard"
+      },
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 90,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": 21,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 2
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_21578/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_21578/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_21578/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 1536,
+            "tileSize": 512,
+            "cols": 3,
+            "rows": 3,
+            "urlTemplate": "media/main/pano_21578/{faceIndex}/1/{row}_{col}.jpg"
+          },
+          {
+            "index": 2,
+            "faceSize": 2560,
+            "tileSize": 512,
+            "cols": 5,
+            "rows": 5,
+            "urlTemplate": "media/main/pano_21578/{faceIndex}/2/{row}_{col}.jpg"
+          },
+          {
+            "index": 3,
+            "faceSize": 5120,
+            "tileSize": 512,
+            "cols": 10,
+            "rows": 10,
+            "urlTemplate": "media/main/pano_21578/{faceIndex}/3/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint21937",
+          "type": "aero-link",
+          "yaw": -142.16,
+          "pitch": 39.14,
+          "title": {
+            "ru": "5. Аэропано",
+            "kz": "5. Аэропанорама",
+            "en": "5. Aerial"
+          },
+          "targetSceneId": "pano21617",
+          "arrivalYaw": 97,
+          "arrivalPitch": 28.46,
+          "arrivalFov": 31.5444,
+          "linkVariant": "drone"
+        },
+        {
+          "id": "spotpoint21938",
+          "type": "aero-link",
+          "yaw": 31.62,
+          "pitch": 58.09,
+          "title": {
+            "ru": "Аэропано 250 m",
+            "kz": "Аэропанорама 250 m",
+            "en": "Aerial 250 m"
+          },
+          "targetSceneId": "pano20958",
+          "arrivalYaw": 92.23,
+          "arrivalPitch": 61.73,
+          "arrivalFov": 38.1688,
+          "linkVariant": "drone"
+        },
+        {
+          "id": "spotpoint23420",
+          "type": "step",
+          "yaw": 97.21,
+          "pitch": -26.78,
+          "title": {
+            "ru": "1. Холл (1 этаж)",
+            "kz": "1. Холл (1 қабат)",
+            "en": "1. Lobby (1 Floor)"
+          },
+          "targetSceneId": "pano23370",
+          "arrivalYaw": 1.8,
+          "arrivalPitch": -0.9,
+          "arrivalFov": 90,
+          "linkVariant": "enter-hall"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano23370",
+      "zone": "hall",
+      "title": {
+        "ru": "1. Холл (1 этаж)",
+        "kz": "1. Холл (1 қабат)",
+        "en": "1. Lobby (1 Floor)"
+      },
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 90,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": -71.7,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 2
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_23370/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_23370/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_23370/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 2048,
+            "tileSize": 512,
+            "cols": 4,
+            "rows": 4,
+            "urlTemplate": "media/main/pano_23370/{faceIndex}/1/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint23378",
+          "type": "step",
+          "yaw": 0.25,
+          "pitch": -18,
+          "title": {
+            "ru": "2. Холл (1 этаж)",
+            "kz": "2. Холл (1 қабат)",
+            "en": "2. Lobby (1 Floor)"
+          },
+          "targetSceneId": "pano23371",
+          "arrivalYaw": -80.1,
+          "arrivalPitch": -0.45,
+          "arrivalFov": 90,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "spotpoint23418",
+          "type": "step",
+          "yaw": -78.42,
+          "pitch": -18,
+          "title": {
+            "ru": "5. Колясочная",
+            "kz": "5. Арба бөлмесі",
+            "en": "5. Stroller Room"
+          },
+          "targetSceneId": "pano23374",
+          "arrivalYaw": 4.05,
+          "arrivalPitch": 1.8,
+          "arrivalFov": 90,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "spotpoint23419",
+          "type": "step",
+          "yaw": -175.52,
+          "pitch": -18,
+          "title": {
+            "ru": "Двор",
+            "kz": "Аула",
+            "en": "Courtyard"
+          },
+          "targetSceneId": "pano21578",
+          "arrivalYaw": -92.25,
+          "arrivalPitch": 1.35,
+          "arrivalFov": 90,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano23371",
+      "zone": "hall",
+      "title": {
+        "ru": "2. Холл (1 этаж)",
+        "kz": "2. Холл (1 қабат)",
+        "en": "2. Lobby (1 Floor)"
+      },
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 90,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": -160.6,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 2
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_23371/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_23371/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_23371/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 2048,
+            "tileSize": 512,
+            "cols": 4,
+            "rows": 4,
+            "urlTemplate": "media/main/pano_23371/{faceIndex}/1/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint23421",
+          "type": "step",
+          "yaw": 91.37,
+          "pitch": -18,
+          "title": {
+            "ru": "1. Холл (1 этаж)",
+            "kz": "1. Холл (1 қабат)",
+            "en": "1. Lobby (1 Floor)"
+          },
+          "targetSceneId": "pano23370",
+          "arrivalYaw": -179.55,
+          "arrivalPitch": 1.35,
+          "arrivalFov": 90,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "spotpoint23422",
+          "type": "step",
+          "yaw": -76.43,
+          "pitch": -18,
+          "title": {
+            "ru": "3. Лифт (1 этаж)",
+            "kz": "3. Лифт (1 қабат)",
+            "en": "3. Elevator (1 Floor)"
+          },
+          "targetSceneId": "pano23372",
+          "arrivalYaw": 85.95,
+          "arrivalPitch": 0,
+          "arrivalFov": 90,
+          "linkVariant": "elevator"
+        },
+        {
+          "id": "spotpoint23423",
+          "type": "step",
+          "yaw": -180,
+          "pitch": -18,
+          "title": {
+            "ru": "4. Коридор (1 этаж)",
+            "kz": "4. Дәліз (1 қабат)",
+            "en": "4. Corridor (1 Floor)"
+          },
+          "targetSceneId": "pano23373",
+          "arrivalYaw": 8.1,
+          "arrivalPitch": -0.9,
+          "arrivalFov": 90,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano23372",
+      "zone": "hall",
+      "title": {
+        "ru": "3. Лифт (1 этаж)",
+        "kz": "3. Лифт (1 қабат)",
+        "en": "3. Elevator (1 Floor)"
+      },
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 90,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": 10.9,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 2
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_23372/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_23372/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_23372/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 2048,
+            "tileSize": 512,
+            "cols": 4,
+            "rows": 4,
+            "urlTemplate": "media/main/pano_23372/{faceIndex}/1/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint23424",
+          "type": "step",
+          "yaw": -84.9,
+          "pitch": -18,
+          "title": {
+            "ru": "2. Холл (1 этаж)",
+            "kz": "2. Холл (1 қабат)",
+            "en": "2. Lobby (1 Floor)"
+          },
+          "targetSceneId": "pano23371",
+          "arrivalYaw": 90,
+          "arrivalPitch": 0.9,
+          "arrivalFov": 90,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "spotpoint23425",
+          "type": "step",
+          "yaw": 48.05,
+          "pitch": -18,
+          "title": {
+            "ru": "6. Лифт (2 этаж)",
+            "kz": "6. Лифт (2 қабат)",
+            "en": "6. Elevator (2 Floor)"
+          },
+          "targetSceneId": "pano23375",
+          "arrivalYaw": -179.55,
+          "arrivalPitch": 0,
+          "arrivalFov": 90,
+          "linkVariant": "elevator"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano23373",
+      "zone": "hall",
+      "title": {
+        "ru": "4. Коридор (1 этаж)",
+        "kz": "4. Дәліз (1 қабат)",
+        "en": "4. Corridor (1 Floor)"
+      },
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 90,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": 20.9,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 2
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_23373/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_23373/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_23373/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 2048,
+            "tileSize": 512,
+            "cols": 4,
+            "rows": 4,
+            "urlTemplate": "media/main/pano_23373/{faceIndex}/1/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint23426",
+          "type": "step",
+          "yaw": -178.51,
+          "pitch": -18,
+          "title": {
+            "ru": "2. Холл (1 этаж)",
+            "kz": "2. Холл (1 қабат)",
+            "en": "2. Lobby (1 Floor)"
+          },
+          "targetSceneId": "pano23371",
+          "arrivalYaw": 0,
+          "arrivalPitch": 0,
+          "arrivalFov": 90,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "spotpoint24018",
+          "type": "step",
+          "yaw": 27.64,
+          "pitch": -8,
+          "title": {
+            "ru": "Зайти в квартиру",
+            "kz": "Пәтерге кіру",
+            "en": "Enter Showroom"
+          },
+          "subtitle": {
+            "ru": "2-комн. шоурум · 68.4 м²",
+            "kz": "2-бөлмелі шоурум · 68.4 м²",
+            "en": "2-Room Showroom · 68.4 m²"
+          },
+          "targetSceneId": "kv_f2776fff",
+          "arrivalYaw": 0,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "enter-apartment"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano23374",
+      "zone": "hall",
+      "title": {
+        "ru": "5. Колясочная",
+        "kz": "5. Арба бөлмесі",
+        "en": "5. Stroller Room"
+      },
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 90,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": 10.2,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 2
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_23374/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_23374/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_23374/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 2048,
+            "tileSize": 512,
+            "cols": 4,
+            "rows": 4,
+            "urlTemplate": "media/main/pano_23374/{faceIndex}/1/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint23427",
+          "type": "step",
+          "yaw": -176.51,
+          "pitch": -18,
+          "title": {
+            "ru": "1. Холл (1 этаж)",
+            "kz": "1. Холл (1 қабат)",
+            "en": "1. Lobby (1 Floor)"
+          },
+          "targetSceneId": "pano23370",
+          "arrivalYaw": 90,
+          "arrivalPitch": 0.45,
+          "arrivalFov": 90,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano23375",
+      "zone": "hall",
+      "title": {
+        "ru": "6. Лифт (2 этаж)",
+        "kz": "6. Лифт (2 қабат)",
+        "en": "6. Elevator (2 Floor)"
+      },
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 90,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": 173,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 2
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_23375/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_23375/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_23375/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 2048,
+            "tileSize": 512,
+            "cols": 4,
+            "rows": 4,
+            "urlTemplate": "media/main/pano_23375/{faceIndex}/1/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint23428",
+          "type": "step",
+          "yaw": 30.12,
+          "pitch": -8.23,
+          "title": {
+            "ru": "3. Лифт (1 этаж)",
+            "kz": "3. Лифт (1 қабат)",
+            "en": "3. Elevator (1 Floor)"
+          },
+          "targetSceneId": "pano23372",
+          "arrivalYaw": -176.85,
+          "arrivalPitch": -2.7,
+          "arrivalFov": 90,
+          "linkVariant": "elevator"
+        },
+        {
+          "id": "spotpoint23429",
+          "type": "step",
+          "yaw": -89.38,
+          "pitch": -18,
+          "title": {
+            "ru": "7. Коридор (2 этаж)",
+            "kz": "7. Дәліз (2 қабат)",
+            "en": "7. Corridor (2 Floor)"
+          },
+          "targetSceneId": "pano23376",
+          "arrivalYaw": -87.75,
+          "arrivalPitch": 0.9,
+          "arrivalFov": 90,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "pano23376",
+      "zone": "hall",
+      "title": {
+        "ru": "7. Коридор (2 этаж)",
+        "kz": "7. Дәліз (2 қабат)",
+        "en": "7. Corridor (2 Floor)"
+      },
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 90,
+        "fovMin": 30,
+        "fovMax": 95
+      },
+      "northOffset": 172.8,
+      "gps": {
+        "lat": 43.259789,
+        "lng": 76.819081,
+        "altitudeMeters": 2
+      },
+      "hiddenFromStrip": false,
+      "media": {
+        "format": "jpg",
+        "previewUrl": "media/main/pano_23376/preview.jpg",
+        "previewType": "cubestrip-frblud",
+        "thumbUrl": "media/main/pano_23376/thumbnail.jpg",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 1024,
+            "tileSize": 512,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/main/pano_23376/{faceIndex}/0/{row}_{col}.jpg"
+          },
+          {
+            "index": 1,
+            "faceSize": 2048,
+            "tileSize": 512,
+            "cols": 4,
+            "rows": 4,
+            "urlTemplate": "media/main/pano_23376/{faceIndex}/1/{row}_{col}.jpg"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "spotpoint23430",
+          "type": "step",
+          "yaw": 90.37,
+          "pitch": -18,
+          "title": {
+            "ru": "6. Лифт (2 этаж)",
+            "kz": "6. Лифт (2 қабат)",
+            "en": "6. Elevator (2 Floor)"
+          },
+          "targetSceneId": "pano23375",
+          "arrivalYaw": 89.1,
+          "arrivalPitch": -1.35,
+          "arrivalFov": 90,
+          "linkVariant": "elevator"
+        },
+        {
+          "id": "spotpoint24017",
+          "type": "step",
+          "yaw": -28.13,
+          "pitch": -8,
+          "title": {
+            "ru": "Зайти в квартиру",
+            "kz": "Пәтерге кіру",
+            "en": "Enter Showroom"
+          },
+          "subtitle": {
+            "ru": "2-комн. шоурум · 68.4 м²",
+            "kz": "2-бөлмелі шоурум · 68.4 м²",
+            "en": "2-Room Showroom · 68.4 m²"
+          },
+          "targetSceneId": "kv_f2776fff",
+          "arrivalYaw": 0,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "enter-apartment"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "kv_f2776fff",
+      "zone": "apartment",
+      "title": {
+        "ru": "Прихожая",
+        "kz": "Кіреберіс",
+        "en": "Entrance Foyer"
+      },
+      "subtitle": {
+        "ru": "Комната 1 из 8",
+        "kz": "8 бөлменің 1-шісі",
+        "en": "Room 1 of 8"
+      },
+      "initialView": {
+        "yaw": 2.96,
+        "pitch": -2,
+        "fov": 80,
+        "fovMin": 42,
+        "fovMax": 98
+      },
+      "northOffset": -156.1,
+      "media": {
+        "format": "avif",
+        "thumbUrl": "media/kv/panorama_F2776FFF_FC9B_A251_41D6_71E563941C45_t.avif",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 2048,
+            "tileSize": 1024,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/kv/panorama_F2776FFF_FC9B_A251_41D6_71E563941C45_0/{face}/0/{row}_{col}.avif"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "kv_f2776fff_step_1",
+          "type": "step",
+          "yaw": 2.96,
+          "pitch": -24,
+          "title": {
+            "ru": "Коридор",
+            "kz": "Дәліз",
+            "en": "Hallway"
+          },
+          "targetSceneId": "kv_f277356d",
+          "arrivalYaw": -178.58,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "kv_f2776fff_step_2",
+          "type": "step",
+          "yaw": -173.61,
+          "pitch": -24,
+          "title": {
+            "ru": "Коридор",
+            "kz": "Дәліз",
+            "en": "Hallway"
+          },
+          "targetSceneId": "kv_f2772ae5",
+          "arrivalYaw": -92.65,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "kv_f2776fff_step_3",
+          "type": "step",
+          "yaw": -144.6,
+          "pitch": -15,
+          "title": {
+            "ru": "Спальня",
+            "kz": "Жатын бөлме",
+            "en": "Bedroom"
+          },
+          "targetSceneId": "kv_f3840676",
+          "arrivalYaw": 14.65,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "kv_f2776fff_exit_corridor",
+          "type": "step",
+          "yaw": -177.04,
+          "pitch": -16,
+          "title": {
+            "ru": "Выйти в коридор этажа",
+            "kz": "Дәлізге шығу",
+            "en": "Exit to Floor Hallway"
+          },
+          "targetSceneId": "pano23376",
+          "arrivalYaw": 0,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "exit-apartment"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "kv_f2774559",
+      "zone": "apartment",
+      "title": {
+        "ru": "Гостиная",
+        "kz": "Қонақ бөлмесі",
+        "en": "Living Room"
+      },
+      "subtitle": {
+        "ru": "Комната 2 из 8",
+        "kz": "8 бөлменің 2-шісі",
+        "en": "Room 2 of 8"
+      },
+      "initialView": {
+        "yaw": 2.77,
+        "pitch": -2,
+        "fov": 80,
+        "fovMin": 42,
+        "fovMax": 98
+      },
+      "northOffset": 121.2,
+      "media": {
+        "format": "avif",
+        "thumbUrl": "media/kv/panorama_F2774559_FC98_6651_41DF_4AD4A7F9AD58_t.avif",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 2048,
+            "tileSize": 1024,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/kv/panorama_F2774559_FC98_6651_41DF_4AD4A7F9AD58_0/{face}/0/{row}_{col}.avif"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "kv_f2774559_step_1",
+          "type": "step",
+          "yaw": 2.77,
+          "pitch": -24,
+          "title": {
+            "ru": "Кухня",
+            "kz": "Ас үй",
+            "en": "Kitchen"
+          },
+          "targetSceneId": "kv_380a7c1a",
+          "arrivalYaw": 175.93,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "kv_380a7c1a",
+      "zone": "apartment",
+      "title": {
+        "ru": "Кухня",
+        "kz": "Ас үй",
+        "en": "Kitchen"
+      },
+      "subtitle": {
+        "ru": "Комната 3 из 8",
+        "kz": "8 бөлменің 3-шісі",
+        "en": "Room 3 of 8"
+      },
+      "initialView": {
+        "yaw": -50.88,
+        "pitch": -2,
+        "fov": 80,
+        "fovMin": 42,
+        "fovMax": 98
+      },
+      "northOffset": -65.6,
+      "media": {
+        "format": "avif",
+        "thumbUrl": "media/kv/panorama_380A7C1A_29E5_7F4D_41AC_6293C466AE40_t.avif",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 2048,
+            "tileSize": 1024,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/kv/panorama_380A7C1A_29E5_7F4D_41AC_6293C466AE40_0/{face}/0/{row}_{col}.avif"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "kv_380a7c1a_step_1",
+          "type": "step",
+          "yaw": -50.88,
+          "pitch": -24,
+          "title": {
+            "ru": "Коридор",
+            "kz": "Дәліз",
+            "en": "Hallway"
+          },
+          "targetSceneId": "kv_f277356d",
+          "arrivalYaw": 37.1,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "kv_380a7c1a_step_2",
+          "type": "step",
+          "yaw": -4.07,
+          "pitch": -24,
+          "title": {
+            "ru": "Гостиная",
+            "kz": "Қонақ бөлмесі",
+            "en": "Living Room"
+          },
+          "targetSceneId": "kv_f2774559",
+          "arrivalYaw": -177.23,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "kv_f3840676",
+      "zone": "apartment",
+      "title": {
+        "ru": "Спальня",
+        "kz": "Жатын бөлме",
+        "en": "Bedroom"
+      },
+      "subtitle": {
+        "ru": "Комната 4 из 8",
+        "kz": "8 бөлменің 4-шісі",
+        "en": "Room 4 of 8"
+      },
+      "initialView": {
+        "yaw": -165.35,
+        "pitch": -2,
+        "fov": 80,
+        "fovMin": 42,
+        "fovMax": 98
+      },
+      "northOffset": 3.1,
+      "media": {
+        "format": "avif",
+        "thumbUrl": "media/kv/panorama_F3840676_FC9B_A252_41AD_6B967FB4EF91_t.avif",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 2048,
+            "tileSize": 1024,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/kv/panorama_F3840676_FC9B_A252_41AD_6B967FB4EF91_0/{face}/0/{row}_{col}.avif"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "kv_f3840676_step_1",
+          "type": "step",
+          "yaw": -165.35,
+          "pitch": -15,
+          "title": {
+            "ru": "Прихожая",
+            "kz": "Кіреберіс",
+            "en": "Entrance Foyer"
+          },
+          "targetSceneId": "kv_f2776fff",
+          "arrivalYaw": 35.4,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "kv_f2742b93",
+      "zone": "apartment",
+      "title": {
+        "ru": "Детская",
+        "kz": "Балалар бөлмесі",
+        "en": "Kids Room"
+      },
+      "subtitle": {
+        "ru": "Комната 5 из 8",
+        "kz": "8 бөлменің 5-шісі",
+        "en": "Room 5 of 8"
+      },
+      "initialView": {
+        "yaw": -107.53,
+        "pitch": -2,
+        "fov": 80,
+        "fovMin": 42,
+        "fovMax": 98
+      },
+      "northOffset": -2.7,
+      "media": {
+        "format": "avif",
+        "thumbUrl": "media/kv/panorama_F2742B93_FC9B_A2D2_41C8_75F0AF2D9A95_t.avif",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 2048,
+            "tileSize": 1024,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/kv/panorama_F2742B93_FC9B_A2D2_41C8_75F0AF2D9A95_0/{face}/0/{row}_{col}.avif"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "kv_f2742b93_step_1",
+          "type": "step",
+          "yaw": -107.53,
+          "pitch": -15,
+          "title": {
+            "ru": "Коридор",
+            "kz": "Дәліз",
+            "en": "Hallway"
+          },
+          "targetSceneId": "kv_f2772ae5",
+          "arrivalYaw": -179.92,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "kv_f277203c",
+      "zone": "apartment",
+      "title": {
+        "ru": "Ванная",
+        "kz": "Жуынатын бөлме",
+        "en": "Bathroom"
+      },
+      "subtitle": {
+        "ru": "Комната 6 из 8",
+        "kz": "8 бөлменің 6-шісі",
+        "en": "Room 6 of 8"
+      },
+      "initialView": {
+        "yaw": 154.9,
+        "pitch": -2,
+        "fov": 80,
+        "fovMin": 42,
+        "fovMax": 98
+      },
+      "northOffset": -60.7,
+      "media": {
+        "format": "avif",
+        "thumbUrl": "media/kv/panorama_F277203C_FC98_7DD6_41EB_FD22CAF135A4_t.avif",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 2048,
+            "tileSize": 1024,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/kv/panorama_F277203C_FC98_7DD6_41EB_FD22CAF135A4_0/{face}/0/{row}_{col}.avif"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "kv_f277203c_step_1",
+          "type": "step",
+          "yaw": 154.9,
+          "pitch": -15,
+          "title": {
+            "ru": "Коридор",
+            "kz": "Дәліз",
+            "en": "Hallway"
+          },
+          "targetSceneId": "kv_f2772ae5",
+          "arrivalYaw": 140.55,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "kv_f277356d",
+      "zone": "apartment",
+      "title": {
+        "ru": "Коридор",
+        "kz": "Дәліз",
+        "en": "Hallway"
+      },
+      "subtitle": {
+        "ru": "Комната 7 из 8",
+        "kz": "8 бөлменің 7-шісі",
+        "en": "Room 7 of 8"
+      },
+      "initialView": {
+        "yaw": 1.42,
+        "pitch": -2,
+        "fov": 80,
+        "fovMin": 42,
+        "fovMax": 98
+      },
+      "northOffset": 22.4,
+      "media": {
+        "format": "avif",
+        "thumbUrl": "media/kv/panorama_F277356D_FC98_6671_41E6_072F3B28AF9A_t.avif",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 2048,
+            "tileSize": 1024,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/kv/panorama_F277356D_FC98_6671_41E6_072F3B28AF9A_0/{face}/0/{row}_{col}.avif"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "kv_f277356d_step_1",
+          "type": "step",
+          "yaw": 1.42,
+          "pitch": -24,
+          "title": {
+            "ru": "Прихожая",
+            "kz": "Кіреберіс",
+            "en": "Entrance Foyer"
+          },
+          "targetSceneId": "kv_f2776fff",
+          "arrivalYaw": -177.04,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "kv_f277356d_step_2",
+          "type": "step",
+          "yaw": -142.9,
+          "pitch": -24,
+          "title": {
+            "ru": "Кухня",
+            "kz": "Ас үй",
+            "en": "Kitchen"
+          },
+          "targetSceneId": "kv_380a7c1a",
+          "arrivalYaw": 129.12,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "kv_f277356d_step_3",
+          "type": "step",
+          "yaw": 119.62,
+          "pitch": -24,
+          "title": {
+            "ru": "Гостиная",
+            "kz": "Қонақ бөлмесі",
+            "en": "Living Room"
+          },
+          "targetSceneId": "kv_f2774559",
+          "arrivalYaw": -158.66,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    },
+    {
+      "id": "kv_f2772ae5",
+      "zone": "apartment",
+      "title": {
+        "ru": "Коридор",
+        "kz": "Дәліз",
+        "en": "Hallway"
+      },
+      "subtitle": {
+        "ru": "Комната 8 из 8",
+        "kz": "8 бөлменің 8-шісі",
+        "en": "Room 8 of 8"
+      },
+      "initialView": {
+        "yaw": 87.35,
+        "pitch": -2,
+        "fov": 80,
+        "fovMin": 42,
+        "fovMax": 98
+      },
+      "northOffset": -75.1,
+      "media": {
+        "format": "avif",
+        "thumbUrl": "media/kv/panorama_F2772AE5_FC98_6276_41ED_61F187496FB6_t.avif",
+        "levels": [
+          {
+            "index": 0,
+            "faceSize": 2048,
+            "tileSize": 1024,
+            "cols": 2,
+            "rows": 2,
+            "urlTemplate": "media/kv/panorama_F2772AE5_FC98_6276_41ED_61F187496FB6_0/{face}/0/{row}_{col}.avif"
+          }
+        ]
+      },
+      "hotspots": [
+        {
+          "id": "kv_f2772ae5_step_1",
+          "type": "step",
+          "yaw": 87.35,
+          "pitch": -24,
+          "title": {
+            "ru": "Прихожая",
+            "kz": "Кіреберіс",
+            "en": "Entrance Foyer"
+          },
+          "targetSceneId": "kv_f2776fff",
+          "arrivalYaw": 6.39,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "kv_f2772ae5_step_2",
+          "type": "step",
+          "yaw": -39.45,
+          "pitch": -15,
+          "title": {
+            "ru": "Ванная",
+            "kz": "Жуынатын бөлме",
+            "en": "Bathroom"
+          },
+          "targetSceneId": "kv_f277203c",
+          "arrivalYaw": -25.1,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "kv_f2772ae5_step_3",
+          "type": "step",
+          "yaw": 0.08,
+          "pitch": -15,
+          "title": {
+            "ru": "Детская",
+            "kz": "Балалар бөлмесі",
+            "en": "Kids Room"
+          },
+          "targetSceneId": "kv_f2742b93",
+          "arrivalYaw": 72.47,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        },
+        {
+          "id": "kv_f2772ae5_step_4",
+          "type": "step",
+          "yaw": 63.64,
+          "pitch": -15,
+          "title": {
+            "ru": "Спальня",
+            "kz": "Жатын бөлме",
+            "en": "Bedroom"
+          },
+          "targetSceneId": "kv_f3840676",
+          "arrivalYaw": 180,
+          "arrivalPitch": 0,
+          "arrivalFov": 80,
+          "linkVariant": "walk"
+        }
+      ],
+      "polygons": []
+    }
+  ],
+  "floorplan": {
+    "imageUrl": "media/kv/map_E8901C75_FCB8_A650_41EA_6ED5CA3A788A_ru_0.avif",
+    "aspectRatio": 0.917,
+    "title": {
+      "ru": "2-комнатная планировка",
+      "kz": "2-бөлмелі жоспар",
+      "en": "2-Bedroom Layout"
+    },
+    "apartmentAreaSqm": 68.4,
+    "roomsCount": 2,
+    "pins": [
+      {
+        "sceneId": "kv_f2776fff",
+        "x": 0.3449,
+        "y": 0.4829,
+        "radarYawOffset": 177.6,
+        "label": {
+          "ru": "Прихожая",
+          "kz": "Кіреберіс",
+          "en": "Entrance Foyer"
+        }
+      },
+      {
+        "sceneId": "kv_f2774559",
+        "x": 0.6992,
+        "y": 0.755,
+        "radarYawOffset": 270.9,
+        "label": {
+          "ru": "Гостиная",
+          "kz": "Қонақ бөлмесі",
+          "en": "Living Room"
+        }
+      },
+      {
+        "sceneId": "kv_380a7c1a",
+        "x": 0.2104,
+        "y": 0.7484,
+        "radarYawOffset": 87.6,
+        "label": {
+          "ru": "Кухня",
+          "kz": "Ас үй",
+          "en": "Kitchen"
+        }
+      },
+      {
+        "sceneId": "kv_f3840676",
+        "x": 0.5789,
+        "y": 0.4536,
+        "radarYawOffset": 82.9,
+        "label": {
+          "ru": "Спальня",
+          "kz": "Жатын бөлме",
+          "en": "Bedroom"
+        }
+      },
+      {
+        "sceneId": "kv_f2742b93",
+        "x": 0.7049,
+        "y": 0.2352,
+        "radarYawOffset": 26.6,
+        "label": {
+          "ru": "Детская",
+          "kz": "Балалар бөлмесі",
+          "en": "Kids Room"
+        }
+      },
+      {
+        "sceneId": "kv_f277203c",
+        "x": 0.4389,
+        "y": 0.1306,
+        "radarYawOffset": 0,
+        "label": {
+          "ru": "Ванная",
+          "kz": "Жуынатын бөлме",
+          "en": "Bathroom"
+        }
+      },
+      {
+        "sceneId": "kv_f277356d",
+        "x": 0.3429,
+        "y": 0.6407,
+        "radarYawOffset": -1.8,
+        "label": {
+          "ru": "Коридор",
+          "kz": "Дәліз",
+          "en": "Hallway"
+        }
+      },
+      {
+        "sceneId": "kv_f2772ae5",
+        "x": 0.3749,
+        "y": 0.2756,
+        "radarYawOffset": 86.8,
+        "label": {
+          "ru": "Коридор",
+          "kz": "Дәліз",
+          "en": "Hallway"
+        }
+      }
+    ]
+  },
+  "dollhouse": {
+    "modelUrl": "media/kv/model_D0B02A45_DD3F_F171_41EA_C086C964E974/scene.glb",
+    "thumbUrl": "media/kv/model_D0B02A45_DD3F_F171_41EA_C086C964E974_hd_t.jpg",
+    "initialYaw": -45,
+    "initialPitch": 42,
+    "initialDistance": 0.85,
+    "pins": [
+      {
+        "id": "doll_kv_f2776fff",
+        "sceneId": "kv_f2776fff",
+        "position": [
+          0.16,
+          0.04,
+          0
+        ],
+        "label": {
+          "ru": "Прихожая",
+          "kz": "Кіреберіс",
+          "en": "Entrance Foyer"
+        }
+      },
+      {
+        "id": "doll_kv_f2774559",
+        "sceneId": "kv_f2774559",
+        "position": [
+          0.1131,
+          0.04,
+          0.1131
+        ],
+        "label": {
+          "ru": "Гостиная",
+          "kz": "Қонақ бөлмесі",
+          "en": "Living Room"
+        }
+      },
+      {
+        "id": "doll_kv_380a7c1a",
+        "sceneId": "kv_380a7c1a",
+        "position": [
+          0,
+          0.04,
+          0.16
+        ],
+        "label": {
+          "ru": "Кухня",
+          "kz": "Ас үй",
+          "en": "Kitchen"
+        }
+      },
+      {
+        "id": "doll_kv_f3840676",
+        "sceneId": "kv_f3840676",
+        "position": [
+          -0.1131,
+          0.04,
+          0.1131
+        ],
+        "label": {
+          "ru": "Спальня",
+          "kz": "Жатын бөлме",
+          "en": "Bedroom"
+        }
+      },
+      {
+        "id": "doll_kv_f2742b93",
+        "sceneId": "kv_f2742b93",
+        "position": [
+          -0.16,
+          0.04,
+          0
+        ],
+        "label": {
+          "ru": "Детская",
+          "kz": "Балалар бөлмесі",
+          "en": "Kids Room"
+        }
+      },
+      {
+        "id": "doll_kv_f277203c",
+        "sceneId": "kv_f277203c",
+        "position": [
+          -0.1131,
+          0.04,
+          -0.1131
+        ],
+        "label": {
+          "ru": "Ванная",
+          "kz": "Жуынатын бөлме",
+          "en": "Bathroom"
+        }
+      },
+      {
+        "id": "doll_kv_f277356d",
+        "sceneId": "kv_f277356d",
+        "position": [
+          0,
+          0.04,
+          -0.16
+        ],
+        "label": {
+          "ru": "Коридор",
+          "kz": "Дәліз",
+          "en": "Hallway"
+        }
+      },
+      {
+        "id": "doll_kv_f2772ae5",
+        "sceneId": "kv_f2772ae5",
+        "position": [
+          0.1131,
+          0.04,
+          -0.1131
+        ],
+        "label": {
+          "ru": "Коридор",
+          "kz": "Дәліз",
+          "en": "Hallway"
+        }
+      }
+    ]
+  }
+}
