@@ -1,0 +1,38 @@
+# Sensata 360° — настройки Apache для обычного виртуального хостинга.
+# Если после загрузки сайт отвечает «500 Internal Server Error», хостинг запрещает
+# какую-то из директив ниже: удалите этот файл — туры заработают и без него.
+
+# Форматы тайлов, 3D-модели и декодера, которых нет в старых конфигурациях Apache
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType image/avif .avif
+  AddType model/gltf-binary .glb
+  AddType application/wasm .wasm
+  AddType application/json .json
+  AddType text/javascript .js .mjs
+  AddCharset utf-8 .html .js .mjs .css .json .md .txt
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Туры встраиваются на другие сайты (Тильда) через <iframe>: некоторые хостинги
+  # по умолчанию запрещают показ во фрейме — снимаем запрет.
+  Header always unset X-Frame-Options
+
+  # Страницы и описание тура (tour.json) — всегда свежие после обновления сборки
+  <FilesMatch "\.(html|json)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  # Тайлы панорам и превью: сутки, потом браузер сверяется с сервером
+  <FilesMatch "\.(webp|avif|jpe?g|png|glb)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+  # Код движка (имена файлов меняются при каждой сборке) и декодер Draco
+  <FilesMatch "\.(js|mjs|css|wasm)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+
+# Сжатие текстовых файлов (tour.json, код движка)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json application/wasm image/svg+xml text/plain
+</IfModule>

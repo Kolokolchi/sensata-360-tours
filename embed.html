@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="theme-color" content="#0b0c10" />
+<title>Встраивание туров 360° — Sensata Group</title>
+<style>
+  :root { --bg:#0b0c10; --card:#13151b; --card2:#1a1d25; --ink:#f4f1ea; --dim:#9aa0ab; --gold:#c5a47e; --gold2:#e7cfa9; --line:rgba(255,255,255,.09); --warn:#f2c46d; --ok:#7fd1a1; }
+  * { box-sizing:border-box; margin:0; }
+  html, body { min-height:100%; }
+  body { background:var(--bg); color:var(--ink); font-family:"Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif; -webkit-font-smoothing:antialiased; font-size:14px; line-height:1.45; }
+  button, input, select, textarea { font:inherit; color:inherit; }
+  button { cursor:pointer; background:none; border:0; }
+  a { color:var(--gold2); }
+
+  .top { display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:18px 32px; padding:26px clamp(16px,3vw,40px) 18px; border-bottom:1px solid var(--line); }
+  .brand small { display:block; font-size:11px; letter-spacing:.38em; text-transform:uppercase; color:var(--gold); font-weight:700; margin-bottom:6px; }
+  .brand h1 { font-size:clamp(26px,3.6vw,46px); line-height:.95; font-weight:800; letter-spacing:-.03em; text-transform:uppercase; }
+  .brand h1 em { font-style:normal; color:transparent; -webkit-text-stroke:1.2px var(--gold); }
+  .base { flex:1 1 420px; max-width:640px; display:flex; flex-direction:column; gap:6px; }
+  .base span { font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--dim); font-weight:700; }
+  .base input { width:100%; padding:11px 14px; border-radius:12px; border:1px solid var(--line); background:var(--card); outline:none; font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; font-size:13px; }
+  .base input:focus { border-color:var(--gold); }
+  .note { font-size:12px; color:var(--dim); }
+  .note.warn { color:var(--warn); }
+  .note.ok { color:var(--ok); }
+
+  .layout { display:grid; grid-template-columns:minmax(230px,300px) minmax(0,1fr); gap:20px; padding:20px clamp(16px,3vw,40px) 40px; align-items:start; }
+  .list { display:flex; flex-direction:column; gap:8px; position:sticky; top:16px; }
+  .obj { display:flex; align-items:center; gap:12px; width:100%; padding:8px; border-radius:16px; border:1px solid transparent; background:var(--card); text-align:left; transition:border-color .2s, background .2s; }
+  .obj:hover { background:var(--card2); }
+  .obj[aria-current="true"] { border-color:var(--gold); background:var(--card2); }
+  .obj img { width:54px; height:68px; flex:none; object-fit:cover; border-radius:10px; background:#0d0e12; }
+  .obj b { display:block; font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:-.005em; line-height:1.15; }
+  .obj small { display:block; margin-top:4px; font-size:11px; color:var(--dim); font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; overflow-wrap:anywhere; }
+
+  .work { display:flex; flex-direction:column; gap:16px; min-width:0; }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:16px; }
+  .opts { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; }
+  .opts label { display:flex; flex-direction:column; gap:6px; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--dim); font-weight:700; }
+  .opts select { width:100%; padding:10px 12px; border-radius:12px; border:1px solid var(--line); background:var(--card2); text-transform:none; letter-spacing:0; font-weight:500; font-size:14px; color:var(--ink); }
+  .opts select:focus { outline:none; border-color:var(--gold); }
+
+  .preview { position:relative; height:min(62vh,640px); min-height:320px; border-radius:20px; overflow:hidden; background:#0d0e12; border:1px solid var(--line); }
+  .preview iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .preview .tag { position:absolute; left:12px; bottom:12px; padding:5px 10px; border-radius:999px; background:rgba(11,12,16,.7); font-size:11px; color:var(--dim); pointer-events:none; backdrop-filter:blur(6px); }
+
+  .tabs { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+  .tab { padding:9px 14px; border-radius:999px; background:var(--card2); border:1px solid var(--line); font-weight:700; font-size:13px; color:var(--dim); transition:background .2s, color .2s; }
+  .tab:hover { color:var(--ink); }
+  .tab[aria-selected="true"] { background:var(--gold); color:#0b0c10; border-color:var(--gold); }
+  .howto { margin:0 0 12px; padding-left:20px; color:#d3d6dc; }
+  .howto li { margin:3px 0; }
+  .howto code, .howto b { color:var(--gold2); }
+  .howto code { font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; font-size:12.5px; }
+  textarea { width:100%; min-height:190px; resize:vertical; padding:14px; border-radius:14px; border:1px solid var(--line); background:#0d0e12; font-family:ui-monospace,"Cascadia Mono",Consolas,monospace; font-size:12.5px; line-height:1.5; white-space:pre; overflow:auto; }
+  textarea:focus { outline:none; border-color:var(--gold); }
+  .actions { display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; margin-top:12px; }
+  .copy { display:inline-flex; align-items:center; gap:8px; padding:11px 18px; border-radius:999px; background:var(--gold); color:#0b0c10; font-weight:800; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
+  .copy:hover { background:var(--gold2); }
+  .copied { color:var(--ok); font-weight:700; font-size:13px; opacity:0; transition:opacity .2s; }
+  .copied.show { opacity:1; }
+  .foot { padding:0 clamp(16px,3vw,40px) 26px; color:rgba(255,255,255,.3); font-size:11px; letter-spacing:.16em; text-transform:uppercase; }
+
+  @media (max-width: 860px) {
+    .layout { grid-template-columns:1fr; }
+    .list { position:static; flex-direction:row; overflow-x:auto; padding-bottom:4px; scroll-snap-type:x mandatory; }
+    .obj { flex:none; width:240px; scroll-snap-align:start; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition:none !important; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <small>Sensata Group · туры 360°</small>
+    <h1>Ссылки <em>и код</em> для сайта</h1>
+  </div>
+  <label class="base">
+    <span>Адрес хостинга с турами</span>
+    <input id="base" type="url" spellcheck="false" autocomplete="off" />
+    <p class="note" id="baseNote"></p>
+  </label>
+</header>
+
+<div class="layout">
+  <nav class="list" id="list" aria-label="Объекты"></nav>
+
+  <main class="work">
+    <section class="panel opts">
+      <label>Старт тура
+        <select id="start"></select>
+      </label>
+      <label>Язык
+        <select id="lang">
+          <option value="ru">Русский</option>
+          <option value="kz">Қазақша</option>
+          <option value="en">English</option>
+        </select>
+      </label>
+      <label>Высота блока
+        <select id="height">
+          <option value="auto">80% высоты экрана</option>
+          <option value="560">560 px</option>
+          <option value="680">680 px</option>
+          <option value="800">800 px</option>
+        </select>
+      </label>
+      <label>Ширина блока
+        <select id="width">
+          <option value="full">Во всю ширину</option>
+          <option value="grid">По сетке Тильды (1160 px)</option>
+        </select>
+      </label>
+      <label>Скругление углов
+        <select id="radius">
+          <option value="20">20 px</option>
+          <option value="12">12 px</option>
+          <option value="0">Без скругления</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="preview">
+      <iframe id="pv" title="Предпросмотр тура" allow="fullscreen; gyroscope; accelerometer; magnetometer; clipboard-write" allowfullscreen></iframe>
+      <span class="tag">Предпросмотр — так тур выглядит внутри сайта</span>
+    </section>
+
+    <section class="panel">
+      <div class="tabs" role="tablist" id="tabs">
+        <button class="tab" role="tab" data-tab="t123">Тильда: блок HTML (T123)</button>
+        <button class="tab" role="tab" data-tab="zero">Тильда: Zero Block</button>
+        <button class="tab" role="tab" data-tab="popup">Кнопка + попап (T868)</button>
+        <button class="tab" role="tab" data-tab="link">Ссылка</button>
+      </div>
+      <ol class="howto" id="howto"></ol>
+      <textarea id="code" readonly spellcheck="false" aria-label="Код для вставки"></textarea>
+      <div class="actions">
+        <button class="copy" id="copy" type="button">Скопировать</button>
+        <span class="copied" id="copied">Скопировано</span>
+        <a id="open" target="_blank" rel="noopener">Открыть тур в новой вкладке ↗</a>
+      </div>
+    </section>
+  </main>
+</div>
+<p class="foot">Сборка от 20.11.2026</p>
+
+<script>
+  var TOURS = [{"slug":"01_mangilik","title":"ЖК MÁŃGİLİK","cover":"covers/01_mangilik.webp","zones":{"aero":3,"yard":1,"hall":8,"apartment":8}},{"slug":"02_baiqadam","title":"ЖК BAIQADAM","cover":"covers/02_baiqadam.webp","zones":{"aero":3,"yard":1,"hall":10,"apartment":10}},{"slug":"03_nygmet","title":"ЖК NYGMET","cover":"covers/03_nygmet.webp","zones":{"aero":2,"yard":6,"hall":9,"apartment":7}},{"slug":"04_olympic_park","title":"ЖК OLYMPIC PARK","cover":"covers/04_olympic_park.webp","zones":{"aero":3,"yard":1,"hall":7,"apartment":8}},{"slug":"05_qaharman","title":"ЖК QAHARMAN","cover":"covers/05_qaharman.webp","zones":{"aero":3,"yard":1,"hall":6,"apartment":8}}];
+  var BUILD_BASE = "https://kolokolchi.github.io/sensata-360-tours/";
+  var ALLOW = 'fullscreen; gyroscope; accelerometer; magnetometer; clipboard-write';
+  var ZONES = { aero: 'Аэро 360°', yard: 'Двор', hall: 'Холлы / МОП', apartment: 'Квартира' };
+  var ZONE_ORDER = ['aero', 'yard', 'hall', 'apartment'];
+
+  var $ = function (id) { return document.getElementById(id); };
+  var esc = function (s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  };
+  var here = new URL('./', location.href).href;
+  var state = { slug: TOURS[0].slug, start: '', lang: 'ru', height: 'auto', width: 'full', radius: '20', tab: 't123' };
+  var scenesBySlug = {};
+
+  // ---------- Address of the hosting ----------
+  function normBase(v) {
+    v = String(v || '').trim();
+    if (!v) return BUILD_BASE || here;
+    if (v.indexOf('://') === -1) v = 'https://' + v;
+    if (v.charAt(v.length - 1) !== '/') v += '/';
+    return v;
+  }
+  function baseUrl() { return normBase($('base').value); }
+  function checkBase() {
+    var b = baseUrl(), note = $('baseNote');
+    var local = /^(file:|https?:\/\/(localhost|127\.|192\.168\.|10\.))/i.test(b);
+    if (local) {
+      note.className = 'note warn';
+      note.textContent = 'Это локальный адрес — с сайта на Тильде он не откроется. Загрузите папку на хостинг и укажите здесь его адрес (https://…).';
+    } else if (b.indexOf('https://') !== 0) {
+      note.className = 'note warn';
+      note.textContent = 'Тильда работает по HTTPS: адрес хостинга тоже должен начинаться с https://, иначе браузер заблокирует тур.';
+    } else {
+      note.className = 'note ok';
+      note.textContent = 'Ссылки и код ниже ведут на этот адрес.';
+    }
+  }
+
+  // ---------- Links ----------
+  function query(extra) {
+    var p = [];
+    if (state.start.indexOf('zone:') === 0) p.push('zone=' + state.start.slice(5));
+    else if (state.start.indexOf('scene:') === 0) p.push('scene=' + encodeURIComponent(state.start.slice(6)));
+    if (state.lang !== 'ru') p.push('lang=' + state.lang);
+    if (extra) p.push(extra);
+    return p.length ? '?' + p.join('&') : '';
+  }
+  function tourUrl(base, extra) { return base + encodeURIComponent(state.slug) + '/' + query(extra); }
+  function current() { for (var i = 0; i < TOURS.length; i++) if (TOURS[i].slug === state.slug) return TOURS[i]; return TOURS[0]; }
+  function shortName(slug) { return slug.replace(/^[0-9]+_/, '').replace(/_/g, '-').toLowerCase(); }
+
+  // ---------- Embed codes ----------
+  function codeFor(tab) {
+    var t = current(), url = tourUrl(baseUrl()), title = esc('3D-тур 360° — ' + t.title), r = state.radius;
+    var cls = 'sensata-tour-' + shortName(t.slug);
+    if (tab === 'link') return url;
+    if (tab === 'zero') {
+      return '<iframe src="' + esc(url) + '" title="' + title + '" loading="lazy" allow="' + ALLOW + '" allowfullscreen\n' +
+        '  style="display:block;width:100%;height:100%;border:0;border-radius:' + r + 'px;background:#0d0e12;"></iframe>';
+    }
+    if (tab === 'popup') {
+      // A hidden popup iframe would load the whole tour with the page (browsers load
+      // display:none frames eagerly): the src is set only when the popup is shown.
+      return '<iframe class="' + cls + '-popup" data-src="' + esc(tourUrl(baseUrl(), 'fill=1')) + '" title="' + title + '" allow="' + ALLOW + '" allowfullscreen\n' +
+        '  style="display:block;width:100%;height:84vh;border:0;border-radius:' + r + 'px;background:#0d0e12;"></iframe>\n' +
+        '<script>\n' +
+        '(function () {\n' +
+        '  var f = document.querySelector(".' + cls + '-popup:not([src])");\n' +
+        '  if (!f) return;\n' +
+        '  var load = function () { if (!f.src && f.getClientRects().length) f.src = f.getAttribute("data-src"); };\n' +
+        '  if ("IntersectionObserver" in window) {\n' +
+        '    new IntersectionObserver(function (e) { if (e[0].isIntersecting) load(); }).observe(f);\n' +
+        '  }\n' +
+        '  var timer = setInterval(function () { load(); if (f.src) clearInterval(timer); }, 500);\n' +
+        '})();\n' +
+        '</scr' + 'ipt>';
+    }
+    var h = state.height === 'auto' ? 'height:80vh;min-height:440px;max-height:880px;' : 'height:' + state.height + 'px;';
+    var w = state.width === 'grid' ? 'max-width:1160px;margin:0 auto;' : '';
+    return '<style>\n' +
+      '.' + cls + '{position:relative;width:100%;' + w + h + 'border-radius:' + r + 'px;overflow:hidden;background:#0d0e12;}\n' +
+      '.' + cls + ' iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}\n' +
+      '@media (max-width:640px){.' + cls + '{height:72vh;min-height:360px;max-height:none;}}\n' +
+      '</style>\n' +
+      '<div class="' + cls + '">\n' +
+      '  <iframe src="' + esc(url) + '" title="' + title + '" loading="lazy" allow="' + ALLOW + '" allowfullscreen></iframe>\n' +
+      '</div>';
+  }
+
+  function howtoFor(tab) {
+    var t = current(), popupName = '#popup:tour-' + shortName(t.slug);
+    var steps = {
+      t123: [
+        'В Тильде: <b>Добавить блок → Другое → T123 «HTML-код»</b>.',
+        '<b>Контент</b> → вставьте код → <b>Сохранить</b>.',
+        'Опубликуйте страницу. Тур виден в предпросмотре и на опубликованной странице; на телефоне блок сам становится ниже (72% экрана), чтобы страницу можно было пролистать.'
+      ],
+      zero: [
+        'Откройте Zero Block → <b>«+» → HTML</b>, вставьте код.',
+        'Задайте элементу размер: например <b>1160 × 680</b> на компьютере и <b>320 × 460</b> на телефоне (для каждой ширины экрана — свой).',
+        'Тур займёт весь элемент. Скругление углов уже в коде.'
+      ],
+      popup: [
+        'Добавьте блок <b>T868</b> — попап с HTML-кодом (раздел <b>Другое</b>), в <b>Контент</b> вставьте код.',
+        'Там же укажите ссылку попапа: <code>' + esc(popupName) + '</code>. При необходимости увеличьте ширину попапа в настройках блока.',
+        'На кнопке «Смотреть 3D-тур» укажите ссылку <code>' + esc(popupName) + '</code>. Тур начнёт загружаться только когда посетитель откроет попап — страница не тяжелеет.'
+      ],
+      link: [
+        'Прямая ссылка на тур — для кнопки, меню, текста или мессенджера.',
+        'На кнопке Тильды: <b>Ссылка</b> → вставьте адрес и отметьте <b>«Открывать в новом окне»</b>.'
+      ]
+    };
+    return steps[tab].map(function (s) { return '<li>' + s + '</li>'; }).join('');
+  }
+
+  // ---------- Rendering ----------
+  var lastPreview = '';
+  function render() {
+    var t = current();
+    document.querySelectorAll('.obj').forEach(function (b) { b.setAttribute('aria-current', String(b.dataset.slug === state.slug)); });
+    document.querySelectorAll('.tab').forEach(function (b) { b.setAttribute('aria-selected', String(b.dataset.tab === state.tab)); });
+    document.querySelectorAll('.obj small').forEach(function (s) {
+      s.textContent = baseUrl() + s.parentNode.parentNode.dataset.slug + '/';
+    });
+    $('code').value = codeFor(state.tab);
+    $('howto').innerHTML = howtoFor(state.tab);
+    $('open').href = tourUrl(baseUrl());
+    $('pv').parentNode.style.borderRadius = state.radius + 'px';
+    // preview always comes from the copy of the tours this page was opened from
+    var pv = tourUrl(here);
+    if (pv !== lastPreview) { lastPreview = pv; $('pv').src = pv; }
+    document.title = t.title + ' — встраивание тура 360°';
+    checkBase();
+  }
+
+  function fillStart() {
+    var t = current(), sel = $('start');
+    var html = '<option value="">Стартовая сцена тура</option><optgroup label="Начать с зоны">';
+    ZONE_ORDER.forEach(function (z) { if (t.zones[z]) html += '<option value="zone:' + z + '">' + ZONES[z] + '</option>'; });
+    html += '</optgroup>';
+    var scenes = scenesBySlug[t.slug];
+    if (scenes) {
+      ZONE_ORDER.forEach(function (z) {
+        var list = scenes.filter(function (s) { return s.zone === z; });
+        if (!list.length) return;
+        html += '<optgroup label="Сцена · ' + ZONES[z] + '">';
+        list.forEach(function (s) { html += '<option value="scene:' + esc(s.id) + '">' + esc(s.title) + '</option>'; });
+        html += '</optgroup>';
+      });
+    }
+    sel.innerHTML = html;
+    sel.value = state.start;
+    if (sel.value !== state.start) state.start = '';
+  }
+
+  function loadScenes(slug) {
+    if (scenesBySlug[slug]) return;
+    fetch('./' + encodeURIComponent(slug) + '/tour.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (tour) {
+        if (!tour || !tour.scenes) return;
+        scenesBySlug[slug] = tour.scenes
+          .filter(function (s) { return !s.hiddenFromStrip && s.id.indexOf('preview_') !== 0; })
+          .map(function (s) { return { id: s.id, zone: s.zone, title: (s.title && (s.title.ru || s.title.en)) || s.id }; });
+        if (slug === state.slug) fillStart();
+      })
+      .catch(function () {});
+  }
+
+  function select(slug) {
+    state.slug = slug;
+    state.start = '';
+    fillStart();
+    loadScenes(slug);
+    render();
+    // embed.html#03_nygmet opens straight on that object: handy to send to a colleague
+    if (decodeURIComponent(location.hash.slice(1)) !== slug) history.replaceState(null, '', '#' + encodeURIComponent(slug));
+  }
+
+  // ---------- Wiring ----------
+  TOURS.forEach(function (t) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'obj';
+    b.dataset.slug = t.slug;
+    b.innerHTML = '<img src="' + esc(t.cover) + '" alt="" loading="lazy" decoding="async" /><span><b>' + esc(t.title) + '</b><small></small></span>';
+    b.addEventListener('click', function () { select(t.slug); });
+    $('list').appendChild(b);
+  });
+  document.querySelectorAll('.tab').forEach(function (b) {
+    b.addEventListener('click', function () { state.tab = b.dataset.tab; render(); });
+  });
+  ['start', 'lang', 'height', 'width', 'radius'].forEach(function (id) {
+    $(id).addEventListener('change', function () { state[id] = $(id).value; render(); });
+  });
+  $('base').value = BUILD_BASE || here;
+  $('base').addEventListener('input', render);
+  $('base').addEventListener('change', function () { $('base').value = baseUrl(); render(); });
+
+  var copiedTimer = 0;
+  $('copy').addEventListener('click', function () {
+    var text = $('code').value;
+    var done = function () {
+      $('copied').classList.add('show');
+      clearTimeout(copiedTimer);
+      copiedTimer = setTimeout(function () { $('copied').classList.remove('show'); }, 1800);
+    };
+    var fallback = function () { $('code').select(); if (document.execCommand('copy')) done(); };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, fallback);
+    else fallback();
+  });
+
+  function fromHash() {
+    var wanted = decodeURIComponent(location.hash.slice(1));
+    var known = TOURS.some(function (t) { return t.slug === wanted; });
+    if (!known) wanted = TOURS[0].slug;
+    if (wanted !== state.slug || !lastPreview) select(wanted);
+  }
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
+</script>
+</body>
+</html>
