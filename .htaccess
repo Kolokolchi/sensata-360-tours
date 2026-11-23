@@ -36,3 +36,7 @@
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json application/wasm image/svg+xml text/plain
 </IfModule>
+
+# BEGIN sensata-embed (меняется из Sensata 360 Studio)
+# встраивание разрешено на любых сайтах
+# END sensata-embed

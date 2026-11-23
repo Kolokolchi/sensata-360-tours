@@ -145,10 +145,13 @@
     </section>
   </main>
 </div>
-<p class="foot">Сборка от 20.11.2026</p>
+<p class="foot">Сборка от 23.11.2026</p>
 
 <script>
-  var TOURS = [{"slug":"01_mangilik","title":"ЖК MÁŃGİLİK","cover":"covers/01_mangilik.webp","zones":{"aero":3,"yard":1,"hall":8,"apartment":8}},{"slug":"02_baiqadam","title":"ЖК BAIQADAM","cover":"covers/02_baiqadam.webp","zones":{"aero":3,"yard":1,"hall":10,"apartment":10}},{"slug":"03_nygmet","title":"ЖК NYGMET","cover":"covers/03_nygmet.webp","zones":{"aero":2,"yard":6,"hall":9,"apartment":7}},{"slug":"04_olympic_park","title":"ЖК OLYMPIC PARK","cover":"covers/04_olympic_park.webp","zones":{"aero":3,"yard":1,"hall":7,"apartment":8}},{"slug":"05_qaharman","title":"ЖК QAHARMAN","cover":"covers/05_qaharman.webp","zones":{"aero":3,"yard":1,"hall":6,"apartment":8}}];
+  // Objects come from catalog.json (Studio adds new ones on the host); the list baked in
+  // at build time is the fallback when the catalog cannot be read
+  var BAKED = [{"slug":"01_mangilik","title":"ЖК MÁŃGİLİK","cover":"01_mangilik/cover.webp","zones":{"aero":3,"yard":1,"hall":8,"apartment":8}},{"slug":"02_baiqadam","title":"ЖК BAIQADAM","cover":"02_baiqadam/cover.webp","zones":{"aero":3,"yard":1,"hall":10,"apartment":10}},{"slug":"03_nygmet","title":"ЖК NYGMET","cover":"03_nygmet/cover.webp","zones":{"aero":2,"yard":6,"hall":9,"apartment":7}},{"slug":"04_olympic_park","title":"ЖК OLYMPIC PARK","cover":"04_olympic_park/cover.webp","zones":{"aero":3,"yard":1,"hall":7,"apartment":8}},{"slug":"05_qaharman","title":"ЖК QAHARMAN","cover":"05_qaharman/cover.webp","zones":{"aero":3,"yard":1,"hall":6,"apartment":8}}];
+  var TOURS = [];
   var BUILD_BASE = "https://kolokolchi.github.io/sensata-360-tours/";
   var ALLOW = 'fullscreen; gyroscope; accelerometer; magnetometer; clipboard-write';
   var ZONES = { aero: 'Аэро 360°', yard: 'Двор', hall: 'Холлы / МОП', apartment: 'Квартира' };
@@ -161,7 +164,7 @@
     });
   };
   var here = new URL('./', location.href).href;
-  var state = { slug: TOURS[0].slug, start: '', lang: 'ru', height: 'auto', width: 'full', radius: '20', tab: 't123' };
+  var state = { slug: '', start: '', lang: 'ru', height: 'auto', width: 'full', radius: '20', tab: 't123' };
   var scenesBySlug = {};
 
   // ---------- Address of the hosting ----------
@@ -330,7 +333,7 @@
   }
 
   // ---------- Wiring ----------
-  TOURS.forEach(function (t) {
+  function addObject(t) {
     var b = document.createElement('button');
     b.type = 'button';
     b.className = 'obj';
@@ -338,7 +341,7 @@
     b.innerHTML = '<img src="' + esc(t.cover) + '" alt="" loading="lazy" decoding="async" /><span><b>' + esc(t.title) + '</b><small></small></span>';
     b.addEventListener('click', function () { select(t.slug); });
     $('list').appendChild(b);
-  });
+  }
   document.querySelectorAll('.tab').forEach(function (b) {
     b.addEventListener('click', function () { state.tab = b.dataset.tab; render(); });
   });
@@ -363,13 +366,28 @@
   });
 
   function fromHash() {
+    if (!TOURS.length) return;
     var wanted = decodeURIComponent(location.hash.slice(1));
     var known = TOURS.some(function (t) { return t.slug === wanted; });
     if (!known) wanted = TOURS[0].slug;
     if (wanted !== state.slug || !lastPreview) select(wanted);
   }
+  function init(list) {
+    TOURS = (list || []).filter(function (t) {
+      return t && typeof t.slug === 'string' && /^[a-z0-9][a-z0-9_-]{0,63}$/.test(t.slug) && typeof t.title === 'string' && t.zones;
+    });
+    if (!TOURS.length) {
+      $('list').innerHTML = '<p class="note">Объектов пока нет — опубликуйте первый из Sensata 360 Studio.</p>';
+      return;
+    }
+    TOURS.forEach(addObject);
+    fromHash();
+  }
   window.addEventListener('hashchange', fromHash);
-  fromHash();
+  fetch('catalog.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (c) { init(c && Array.isArray(c.objects) ? c.objects : BAKED); })
+    .catch(function () { init(BAKED); });
 </script>
 </body>
 </html>

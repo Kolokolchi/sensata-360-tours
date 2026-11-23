@@ -1,0 +1,82 @@
+{
+  "format": "sensata-tour-catalog",
+  "version": 1,
+  "updatedAt": "2026-11-23T13:23:38.708Z",
+  "objects": [
+    {
+      "slug": "01_mangilik",
+      "title": "ЖК MÁŃGİLİK",
+      "badge": "Бизнес-класс",
+      "address": "ул. Ауэзова, 3г / ул. Гоголя",
+      "scenes": 20,
+      "zones": {
+        "aero": 3,
+        "yard": 1,
+        "hall": 8,
+        "apartment": 8
+      },
+      "cover": "01_mangilik/cover.webp",
+      "accent": "#c5a47e"
+    },
+    {
+      "slug": "02_baiqadam",
+      "title": "ЖК BAIQADAM",
+      "badge": "Комфорт+",
+      "address": "ул. Розыбакиева / ул. Байкадамова",
+      "scenes": 24,
+      "zones": {
+        "aero": 3,
+        "yard": 1,
+        "hall": 10,
+        "apartment": 10
+      },
+      "cover": "02_baiqadam/cover.webp",
+      "accent": "#c5a47e"
+    },
+    {
+      "slug": "03_nygmet",
+      "title": "ЖК NYGMET",
+      "badge": "Бизнес-класс",
+      "address": "ул. Нурмакова, 1а / ул. Гоголя",
+      "scenes": 24,
+      "zones": {
+        "aero": 2,
+        "yard": 6,
+        "hall": 9,
+        "apartment": 7
+      },
+      "cover": "03_nygmet/cover.webp",
+      "accent": "#c5a47e"
+    },
+    {
+      "slug": "04_olympic_park",
+      "title": "ЖК OLYMPIC PARK",
+      "badge": "Комфорт-класс",
+      "address": "пр. Рыскулова / ул. Момышулы",
+      "scenes": 19,
+      "zones": {
+        "aero": 3,
+        "yard": 1,
+        "hall": 7,
+        "apartment": 8
+      },
+      "cover": "04_olympic_park/cover.webp",
+      "accent": "#c5a47e"
+    },
+    {
+      "slug": "05_qaharman",
+      "title": "ЖК QAHARMAN",
+      "badge": "Комфорт-класс",
+      "address": "ул. Момышулы / пр. Рыскулова",
+      "scenes": 18,
+      "zones": {
+        "aero": 3,
+        "yard": 1,
+        "hall": 6,
+        "apartment": 8
+      },
+      "cover": "05_qaharman/cover.webp",
+      "accent": "#c5a47e"
+    }
+  ]
+}

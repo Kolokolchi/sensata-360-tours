@@ -40,6 +40,7 @@
   .more > div { overflow:hidden; display:flex; flex-direction:column; gap:10px; }
   .panel:hover .more, .panel:focus-visible .more { grid-template-rows:1fr; }
   .addr { font-size:13px; color:#d3d6dc; }
+  .empty { margin:auto; color:var(--dim); font-size:18px; }
   .facts { display:flex; flex-wrap:wrap; gap:6px; }
   .facts span { font-size:11px; font-weight:600; padding:4px 9px; border-radius:8px; background:rgba(255,255,255,.1); backdrop-filter:blur(6px); white-space:nowrap; }
   .go { align-self:flex-start; margin-top:2px; display:inline-flex; align-items:center; gap:10px; padding:11px 18px; border-radius:999px; background:var(--gold); color:#0b0c10; font-weight:800; font-size:12px; letter-spacing:.12em; text-transform:uppercase; }
@@ -100,10 +101,10 @@
       <small>Sensata Group · Алматы</small>
       <h1>Туры <em>360°</em></h1>
     </div>
-    <p class="lede"><b>Пять жилых комплексов в одном окне.</b> Аэропанорамы, дворы, холлы и квартиры — выберите объект и переключайтесь между ними без перезагрузки.</p>
+    <p class="lede"><b>Жилые комплексы в одном окне.</b> Аэропанорамы, дворы, холлы и квартиры — выберите объект и переключайтесь между ними без перезагрузки.</p>
   </header>
   <nav class="panels" id="panels" aria-label="Жилые комплексы"></nav>
-  <div class="foot">Сборка от 20.11.2026</div>
+  <div class="foot" id="foot">Сборка от 23.11.2026</div>
 </main>
 
 <section class="tour" aria-label="Тур">
@@ -121,12 +122,21 @@
 </section>
 
 <script>
-  const TOURS = [{"slug":"01_mangilik","title":"ЖК MÁŃGİLİK","badge":"Бизнес-класс","address":"ул. Ауэзова, 3г / ул. Гоголя","scenes":20,"zones":{"aero":3,"yard":1,"hall":8,"apartment":8},"cover":"covers/01_mangilik.webp","accent":"#c5a47e"},{"slug":"02_baiqadam","title":"ЖК BAIQADAM","badge":"Комфорт+","address":"ул. Розыбакиева / ул. Байкадамова","scenes":24,"zones":{"aero":3,"yard":1,"hall":10,"apartment":10},"cover":"covers/02_baiqadam.webp","accent":"#c5a47e"},{"slug":"03_nygmet","title":"ЖК NYGMET","badge":"Бизнес-класс","address":"ул. Нурмакова, 1а / ул. Гоголя","scenes":24,"zones":{"aero":2,"yard":6,"hall":9,"apartment":7},"cover":"covers/03_nygmet.webp","accent":"#c5a47e"},{"slug":"04_olympic_park","title":"ЖК OLYMPIC PARK","badge":"Комфорт-класс","address":"пр. Рыскулова / ул. Момышулы","scenes":19,"zones":{"aero":3,"yard":1,"hall":7,"apartment":8},"cover":"covers/04_olympic_park.webp","accent":"#c5a47e"},{"slug":"05_qaharman","title":"ЖК QAHARMAN","badge":"Комфорт-класс","address":"ул. Момышулы / пр. Рыскулова","scenes":18,"zones":{"aero":3,"yard":1,"hall":6,"apartment":8},"cover":"covers/05_qaharman.webp","accent":"#c5a47e"}];
+  // The list of complexes lives in catalog.json: Studio adds and removes objects on the
+  // host without rebuilding this page. The list baked in at build time is the fallback
+  // (page opened from disk, catalog unreachable).
+  const BAKED = [{"slug":"01_mangilik","title":"ЖК MÁŃGİLİK","badge":"Бизнес-класс","address":"ул. Ауэзова, 3г / ул. Гоголя","scenes":20,"zones":{"aero":3,"yard":1,"hall":8,"apartment":8},"cover":"01_mangilik/cover.webp","accent":"#c5a47e"},{"slug":"02_baiqadam","title":"ЖК BAIQADAM","badge":"Комфорт+","address":"ул. Розыбакиева / ул. Байкадамова","scenes":24,"zones":{"aero":3,"yard":1,"hall":10,"apartment":10},"cover":"02_baiqadam/cover.webp","accent":"#c5a47e"},{"slug":"03_nygmet","title":"ЖК NYGMET","badge":"Бизнес-класс","address":"ул. Нурмакова, 1а / ул. Гоголя","scenes":24,"zones":{"aero":2,"yard":6,"hall":9,"apartment":7},"cover":"03_nygmet/cover.webp","accent":"#c5a47e"},{"slug":"04_olympic_park","title":"ЖК OLYMPIC PARK","badge":"Комфорт-класс","address":"пр. Рыскулова / ул. Момышулы","scenes":19,"zones":{"aero":3,"yard":1,"hall":7,"apartment":8},"cover":"04_olympic_park/cover.webp","accent":"#c5a47e"},{"slug":"05_qaharman","title":"ЖК QAHARMAN","badge":"Комфорт-класс","address":"ул. Момышулы / пр. Рыскулова","scenes":18,"zones":{"aero":3,"yard":1,"hall":6,"apartment":8},"cover":"05_qaharman/cover.webp","accent":"#c5a47e"}];
+  let TOURS = [];
   const $ = (id) => document.getElementById(id);
   const panels = $('panels'), rail = $('rail'), frame = $('frame'), veil = $('veil');
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const plural = (n) => (n % 10 === 1 && n % 100 !== 11 ? 'сцена' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'сцены' : 'сцен');
+  const validEntry = (t) => t && typeof t.slug === 'string' && /^[a-z0-9][a-z0-9_-]{0,63}$/.test(t.slug) && typeof t.title === 'string' && t.zones && typeof t.cover === 'string';
 
+  function start(list, updatedAt) {
+  TOURS = list.filter(validEntry);
+  if (updatedAt) $('foot').textContent = 'Обновлено ' + new Date(updatedAt).toLocaleDateString('ru-RU');
+  if (!TOURS.length) panels.innerHTML = '<p class="empty">Объекты скоро появятся.</p>';
   TOURS.forEach((t, i) => {
     const no = String(i + 1).padStart(2, '0');
     const facts = [t.scenes + ' ' + plural(t.scenes), 'Аэро ' + t.zones.aero, 'Двор ' + t.zones.yard, 'Холлы ' + t.zones.hall, 'Квартира ' + t.zones.apartment];
@@ -154,6 +164,8 @@
     tab.addEventListener('click', () => { location.hash = t.slug; });
     rail.insertBefore(tab, rail.querySelector('.spacer'));
   });
+  show(decodeURIComponent(location.hash.slice(1)));
+  }
 
   let current = null;
   function show(slug) {
@@ -183,7 +195,10 @@
     const n = Number(e.key);
     if (n >= 1 && n <= TOURS.length && !e.ctrlKey && !e.metaKey && !e.altKey) location.hash = TOURS[n - 1].slug;
   });
-  show(decodeURIComponent(location.hash.slice(1)));
+  fetch('catalog.json', { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((c) => (c && Array.isArray(c.objects) ? start(c.objects, c.updatedAt) : start(BAKED)))
+    .catch(() => start(BAKED));
 </script>
 </body>
 </html>
