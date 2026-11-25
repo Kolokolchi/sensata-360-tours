@@ -472,7 +472,8 @@
               "pitch": -27.11
             }
           ],
-          "targetSceneId": "pano21441"
+          "targetSceneId": "pano21441",
+          "phaseId": "q1"
         },
         {
           "id": "spotpolygon26310",
@@ -549,7 +550,8 @@
               "pitch": -32.61
             }
           ],
-          "targetSceneId": "pano21441"
+          "targetSceneId": "pano21441",
+          "phaseId": "q2"
         }
       ]
     },
@@ -707,7 +709,8 @@
               "pitch": -19.06
             }
           ],
-          "targetSceneId": "pano21441"
+          "targetSceneId": "pano21441",
+          "phaseId": "q2"
         },
         {
           "id": "spotpolygon26309",
@@ -776,7 +779,8 @@
               "pitch": -21.92
             }
           ],
-          "targetSceneId": "pano21441"
+          "targetSceneId": "pano21441",
+          "phaseId": "q1"
         }
       ]
     },
@@ -934,7 +938,8 @@
               "pitch": -45.17
             }
           ],
-          "targetSceneId": "pano21441"
+          "targetSceneId": "pano21441",
+          "phaseId": "q2"
         },
         {
           "id": "spotpolygon26312",
@@ -995,7 +1000,8 @@
               "pitch": -48.19
             }
           ],
-          "targetSceneId": "pano21441"
+          "targetSceneId": "pano21441",
+          "phaseId": "q1"
         }
       ]
     },
@@ -2089,8 +2095,8 @@
         {
           "id": "kv_d49ce509_step_1",
           "type": "step",
-          "yaw": -77.51,
-          "pitch": -22.51,
+          "yaw": -79,
+          "pitch": -24,
           "title": {
             "ru": "Гостиная",
             "kz": "Қонақ бөлмесі",
@@ -2105,8 +2111,8 @@
         {
           "id": "kv_d49ce509_to_kv_d49d3ba1",
           "type": "step",
-          "yaw": -79.89,
-          "pitch": -6.65,
+          "yaw": -83.5,
+          "pitch": -13.5,
           "title": {
             "ru": "Гостиная · столовая",
             "kz": "Қонақ бөлме · асхана",
@@ -2122,7 +2128,7 @@
           "id": "kv_d49ce509_exit_corridor",
           "type": "step",
           "yaw": 176.87,
-          "pitch": -7.48,
+          "pitch": -18.74,
           "title": {
             "ru": "Выйти в коридор этажа",
             "kz": "Дәлізге шығу",
@@ -2184,8 +2190,8 @@
         {
           "id": "kv_d49d3ba1_to_kv_d49ce509",
           "type": "step",
-          "yaw": 6.26,
-          "pitch": -3,
+          "yaw": 4,
+          "pitch": -11.5,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -2200,8 +2206,8 @@
         {
           "id": "kv_d49d3ba1_step_1",
           "type": "step",
-          "yaw": 0.66,
-          "pitch": -24,
+          "yaw": -8,
+          "pitch": -20,
           "title": {
             "ru": "Гостиная",
             "kz": "Қонақ бөлмесі",
@@ -2264,7 +2270,7 @@
           "id": "kv_d4930c86_step_2",
           "type": "step",
           "yaw": 126.49,
-          "pitch": -5.91,
+          "pitch": -17.95,
           "title": {
             "ru": "Гостиная",
             "kz": "Қонақ бөлмесі",
@@ -2422,7 +2428,7 @@
           "id": "kv_d4934da4_step_4",
           "type": "step",
           "yaw": -179.56,
-          "pitch": -6.23,
+          "pitch": -18.12,
           "title": {
             "ru": "Спальня 1",
             "kz": "Жатын бөлме 1",
@@ -2454,7 +2460,7 @@
           "id": "kv_d4934da4_step_3",
           "type": "step",
           "yaw": 2.79,
-          "pitch": -6.59,
+          "pitch": -18.3,
           "title": {
             "ru": "Спальня 2",
             "kz": "Жатын бөлме 2",
@@ -2517,7 +2523,7 @@
           "id": "kv_d4937d59_step_1",
           "type": "step",
           "yaw": -147.97,
-          "pitch": -5.83,
+          "pitch": -17.91,
           "title": {
             "ru": "Коридор",
             "kz": "Дәліз",
@@ -2579,8 +2585,8 @@
         {
           "id": "kv_d4931621_to_kv_d4934da4",
           "type": "step",
-          "yaw": 167.76,
-          "pitch": -3,
+          "yaw": 160,
+          "pitch": -20,
           "title": {
             "ru": "Коридор",
             "kz": "Дәліз",
@@ -2595,8 +2601,8 @@
         {
           "id": "kv_d4931621_step_1",
           "type": "step",
-          "yaw": 169.68,
-          "pitch": -16.19,
+          "yaw": 166,
+          "pitch": -28,
           "title": {
             "ru": "Душевая",
             "kz": "Душ бөлмесі",
@@ -2659,7 +2665,7 @@
           "id": "kv_00c9c37b_step_1",
           "type": "step",
           "yaw": 136.62,
-          "pitch": -4.37,
+          "pitch": -17.18,
           "title": {
             "ru": "Спальня 2",
             "kz": "Жатын бөлме 2",
@@ -2722,7 +2728,7 @@
           "id": "kv_00db22e9_step_1",
           "type": "step",
           "yaw": 179.52,
-          "pitch": -10.43,
+          "pitch": -20.21,
           "title": {
             "ru": "Коридор",
             "kz": "Дәліз",
@@ -2784,8 +2790,8 @@
         {
           "id": "kv_d49d4325_step_1",
           "type": "step",
-          "yaw": -164.85,
-          "pitch": -28,
+          "yaw": -168,
+          "pitch": -24,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -2801,7 +2807,7 @@
           "id": "kv_d49d4325_step_4",
           "type": "step",
           "yaw": -112.47,
-          "pitch": -4.58,
+          "pitch": -17.29,
           "title": {
             "ru": "Кухня",
             "kz": "Ас үй",
@@ -2833,7 +2839,7 @@
           "id": "kv_d49d4325_step_3",
           "type": "step",
           "yaw": 3.44,
-          "pitch": -8.19,
+          "pitch": -19.09,
           "title": {
             "ru": "Гостиная · столовая",
             "kz": "Қонақ бөлме · асхана",
@@ -2849,7 +2855,7 @@
           "id": "kv_d49d4325_exit_corridor",
           "type": "step",
           "yaw": -143.58,
-          "pitch": -5.79,
+          "pitch": -17.89,
           "title": {
             "ru": "Выйти в коридор этажа",
             "kz": "Дәлізге шығу",
@@ -3003,6 +3009,47 @@
         "kv_00db22e9",
         "kv_d49d4325"
       ]
+    },
+    "tone": "dark"
+  },
+  "phases": [
+    {
+      "id": "q1",
+      "title": {
+        "ru": "1 очередь",
+        "kz": "1 кезек",
+        "en": "Phase 1"
+      },
+      "subtitle": {
+        "ru": "Комфорт+",
+        "kz": "Комфорт+",
+        "en": "Comfort+"
+      },
+      "aeroView": {
+        "sceneId": "pano21410",
+        "yaw": -45.31,
+        "pitch": -45.06,
+        "fov": 50
+      }
+    },
+    {
+      "id": "q2",
+      "title": {
+        "ru": "2 очередь",
+        "kz": "2 кезек",
+        "en": "Phase 2"
+      },
+      "subtitle": {
+        "ru": "Комфорт+",
+        "kz": "Комфорт+",
+        "en": "Comfort+"
+      },
+      "aeroView": {
+        "sceneId": "pano21410",
+        "yaw": -30.66,
+        "pitch": -37.37,
+        "fov": 50
+      }
     }
-  }
+  ]
 }

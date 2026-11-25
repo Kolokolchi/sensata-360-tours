@@ -393,6 +393,56 @@
           },
           "targetSceneId": "pano25892",
           "linkVariant": "dive-yard"
+        },
+        {
+          "id": "xlink_mangilik",
+          "type": "complex-link",
+          "yaw": 20.5,
+          "pitch": -10.5,
+          "title": {
+            "ru": "ЖК MÁŃGİLİK",
+            "kz": "MÁŃGİLİK ТК",
+            "en": "MÁŃGİLİK Residence"
+          },
+          "subtitle": {
+            "ru": "Бизнес-класс",
+            "kz": "Бизнес-класс",
+            "en": "Business Class"
+          },
+          "description": {
+            "ru": "ул. Ауэзова, 3г / ул. Гоголя",
+            "kz": "Әуезов к-сі, 3г / Гоголь к-сі",
+            "en": "Auezov St, 3g / Gogol St"
+          },
+          "distanceText": {
+            "ru": "≈ 500 м",
+            "kz": "≈ 500 м",
+            "en": "≈ 500 m"
+          },
+          "targetComplexSlug": "01_mangilik",
+          "stemHeight": 46
+        },
+        {
+          "id": "label_nygmet_apartment",
+          "type": "label",
+          "yaw": 20.62,
+          "pitch": -30.75,
+          "title": {
+            "ru": "NYGMET Apartment",
+            "kz": "NYGMET Apartment",
+            "en": "NYGMET Apartment"
+          },
+          "subtitle": {
+            "ru": "Апартаменты",
+            "kz": "Апартаменттер",
+            "en": "Apartments"
+          },
+          "description": {
+            "ru": "Отдельный корпус апартаментов комплекса NYGMET.",
+            "kz": "NYGMET кешенінің жеке апартамент корпусы.",
+            "en": "Separate apartment building of the NYGMET complex."
+          },
+          "stemHeight": 40
         }
       ],
       "polygons": []
@@ -497,6 +547,28 @@
           "arrivalPitch": -0.45,
           "arrivalFov": 90,
           "linkVariant": "dive-yard"
+        },
+        {
+          "id": "label_nygmet_apartment",
+          "type": "label",
+          "yaw": -24.04,
+          "pitch": -17.9,
+          "title": {
+            "ru": "NYGMET Apartment",
+            "kz": "NYGMET Apartment",
+            "en": "NYGMET Apartment"
+          },
+          "subtitle": {
+            "ru": "Апартаменты",
+            "kz": "Апартаменттер",
+            "en": "Apartments"
+          },
+          "description": {
+            "ru": "Отдельный корпус апартаментов комплекса NYGMET.",
+            "kz": "NYGMET кешенінің жеке апартамент корпусы.",
+            "en": "Separate apartment building of the NYGMET complex."
+          },
+          "stemHeight": 40
         }
       ],
       "polygons": []
@@ -583,8 +655,8 @@
         },
         {
           "id": "hs_pano21049__pano22139",
-          "yaw": 144,
-          "pitch": -3,
+          "yaw": -88,
+          "pitch": -2,
           "title": {
             "ru": "3. Вход (1 этаж)",
             "kz": "3. Кіреберіс (1 қабат)",
@@ -619,6 +691,28 @@
           "targetSceneId": "pano21209",
           "type": "aero-link",
           "linkVariant": "drone"
+        },
+        {
+          "id": "label_nygmet_apartment",
+          "type": "label",
+          "yaw": 104,
+          "pitch": 18,
+          "title": {
+            "ru": "NYGMET Apartment",
+            "kz": "NYGMET Apartment",
+            "en": "NYGMET Apartment"
+          },
+          "subtitle": {
+            "ru": "Апартаменты",
+            "kz": "Апартаменттер",
+            "en": "Apartments"
+          },
+          "description": {
+            "ru": "Отдельный корпус апартаментов комплекса NYGMET.",
+            "kz": "NYGMET кешенінің жеке апартамент корпусы.",
+            "en": "Separate apartment building of the NYGMET complex."
+          },
+          "stemHeight": 24
         }
       ],
       "polygons": []
@@ -907,6 +1001,28 @@
           "targetSceneId": "pano22139",
           "type": "step",
           "linkVariant": "enter-hall"
+        },
+        {
+          "id": "label_nygmet_apartment",
+          "type": "label",
+          "yaw": -12,
+          "pitch": 20,
+          "title": {
+            "ru": "NYGMET Apartment",
+            "kz": "NYGMET Apartment",
+            "en": "NYGMET Apartment"
+          },
+          "subtitle": {
+            "ru": "Апартаменты",
+            "kz": "Апартаменттер",
+            "en": "Apartments"
+          },
+          "description": {
+            "ru": "Отдельный корпус апартаментов комплекса NYGMET.",
+            "kz": "NYGMET кешенінің жеке апартамент корпусы.",
+            "en": "Separate apartment building of the NYGMET complex."
+          },
+          "stemHeight": 24
         }
       ],
       "polygons": []
@@ -1964,7 +2080,7 @@
           "id": "kv_0070a476_to_kv_99b80ad7",
           "type": "step",
           "yaw": -25.51,
-          "pitch": -7.13,
+          "pitch": -18.57,
           "title": {
             "ru": "Кухня",
             "kz": "Ас үй",
@@ -1979,8 +2095,8 @@
         {
           "id": "kv_0070a476_to_kv_05b1055b",
           "type": "step",
-          "yaw": -4.78,
-          "pitch": -1,
+          "yaw": -3.5,
+          "pitch": -10.5,
           "title": {
             "ru": "Ванная 1",
             "kz": "Жуынатын бөлме 1",
@@ -1995,8 +2111,8 @@
         {
           "id": "kv_0070a476_step_1",
           "type": "step",
-          "yaw": -13,
-          "pitch": -20,
+          "yaw": -17.5,
+          "pitch": -23,
           "title": {
             "ru": "Гостиная",
             "kz": "Қонақ бөлмесі",
@@ -2011,8 +2127,8 @@
         {
           "id": "kv_0070a476_to_kv_007b7254",
           "type": "step",
-          "yaw": 2.14,
-          "pitch": -9,
+          "yaw": 4,
+          "pitch": -12.5,
           "title": {
             "ru": "Спальня",
             "kz": "Жатын бөлме",
@@ -2027,8 +2143,8 @@
         {
           "id": "kv_0070a476_to_kv_9d52f0fb",
           "type": "step",
-          "yaw": -8.63,
-          "pitch": -10,
+          "yaw": -10.5,
+          "pitch": -15.5,
           "title": {
             "ru": "Детская",
             "kz": "Балалар бөлмесі",
@@ -2091,7 +2207,7 @@
           "id": "kv_99b80ad7_step_1",
           "type": "step",
           "yaw": 131.95,
-          "pitch": -3,
+          "pitch": -16.5,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -2154,7 +2270,7 @@
           "id": "kv_9d5ba5a7_step_2",
           "type": "step",
           "yaw": -57.82,
-          "pitch": -5.54,
+          "pitch": -17.77,
           "title": {
             "ru": "Детская",
             "kz": "Балалар бөлмесі",
@@ -2170,7 +2286,7 @@
           "id": "kv_9d5ba5a7_step_1",
           "type": "step",
           "yaw": 4.83,
-          "pitch": -7.32,
+          "pitch": -18.66,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -2233,7 +2349,7 @@
           "id": "kv_9d52f0fb_step_1",
           "type": "step",
           "yaw": 149.62,
-          "pitch": -3,
+          "pitch": -16.5,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -2295,8 +2411,8 @@
         {
           "id": "kv_007b7254_to_kv_0070a476",
           "type": "step",
-          "yaw": 17.79,
-          "pitch": -4,
+          "yaw": 17.8,
+          "pitch": -10.5,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -2311,8 +2427,8 @@
         {
           "id": "kv_007b7254_to_kv_14868d81",
           "type": "step",
-          "yaw": 19,
-          "pitch": -17,
+          "yaw": 19.5,
+          "pitch": -19,
           "title": {
             "ru": "Ванная 2",
             "kz": "Жуынатын бөлме 2",
@@ -2383,7 +2499,7 @@
           "id": "kv_05b1055b_step_1",
           "type": "step",
           "yaw": 160,
-          "pitch": -12,
+          "pitch": -21,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -2446,7 +2562,7 @@
           "id": "kv_14868d81_step_1",
           "type": "step",
           "yaw": 145,
-          "pitch": -12,
+          "pitch": -21,
           "title": {
             "ru": "Спальня",
             "kz": "Жатын бөлме",
@@ -2564,7 +2680,8 @@
         "kv_05b1055b",
         "kv_14868d81"
       ]
-    }
+    },
+    "tone": "dark"
   },
   "sitePlan": {
     "imageUrl": "media/custom/siteplan_nygmet_v2.webp",
@@ -2641,6 +2758,7 @@
           "en": "Park · Play area"
         }
       }
-    ]
+    ],
+    "tone": "photo"
   }
 }

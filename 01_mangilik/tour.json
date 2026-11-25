@@ -146,7 +146,8 @@
           "arrivalYaw": -41.4,
           "arrivalPitch": -12.15,
           "arrivalFov": 90,
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q2"
         },
         {
           "id": "spotpoint20643",
@@ -164,7 +165,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q3"
         },
         {
           "id": "spotpoint20644",
@@ -182,7 +184,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q4"
         },
         {
           "id": "spotpoint20646",
@@ -700,7 +703,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q5"
         },
         {
           "id": "spotpoint20824",
@@ -718,7 +722,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q1"
         },
         {
           "id": "street_01_mangilik_1",
@@ -745,6 +750,34 @@
           },
           "roadAngle": -40,
           "scale": 1
+        },
+        {
+          "id": "xlink_nygmet",
+          "type": "complex-link",
+          "yaw": 153.6,
+          "pitch": -11,
+          "title": {
+            "ru": "ЖК NYGMET",
+            "kz": "NYGMET ТК",
+            "en": "NYGMET Residence"
+          },
+          "subtitle": {
+            "ru": "Бизнес-класс",
+            "kz": "Бизнес-класс",
+            "en": "Business Class"
+          },
+          "description": {
+            "ru": "ул. Нурмакова, 1а / ул. Гоголя",
+            "kz": "Нұрмақов к-сі, 1а / Гоголь к-сі",
+            "en": "Nurmakov St, 1a / Gogol St"
+          },
+          "distanceText": {
+            "ru": "≈ 500 м",
+            "kz": "≈ 500 м",
+            "en": "≈ 500 m"
+          },
+          "targetComplexSlug": "03_nygmet",
+          "stemHeight": 46
         }
       ],
       "polygons": [
@@ -859,7 +892,8 @@
               "pitch": -29.21
             }
           ],
-          "targetSceneId": "pano24632"
+          "targetSceneId": "pano24632",
+          "phaseId": "q1"
         },
         {
           "id": "spotpolygon20715",
@@ -988,7 +1022,8 @@
               "pitch": -21.75
             }
           ],
-          "targetSceneId": "pano24632"
+          "targetSceneId": "pano24632",
+          "phaseId": "q2"
         }
       ]
     },
@@ -1104,7 +1139,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q3"
         },
         {
           "id": "spotpoint20711",
@@ -1122,7 +1158,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q4"
         },
         {
           "id": "spotpoint20712",
@@ -1138,7 +1175,8 @@
           "arrivalYaw": -3.6,
           "arrivalPitch": -0.45,
           "arrivalFov": 90,
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q2"
         },
         {
           "id": "spotpoint20713",
@@ -1156,7 +1194,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q1"
         },
         {
           "id": "spotpoint20773",
@@ -1174,7 +1213,36 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q5"
+        },
+        {
+          "id": "xlink_nygmet",
+          "type": "complex-link",
+          "yaw": 44,
+          "pitch": -6.5,
+          "title": {
+            "ru": "ЖК NYGMET",
+            "kz": "NYGMET ТК",
+            "en": "NYGMET Residence"
+          },
+          "subtitle": {
+            "ru": "Бизнес-класс",
+            "kz": "Бизнес-класс",
+            "en": "Business Class"
+          },
+          "description": {
+            "ru": "ул. Нурмакова, 1а / ул. Гоголя",
+            "kz": "Нұрмақов к-сі, 1а / Гоголь к-сі",
+            "en": "Nurmakov St, 1a / Gogol St"
+          },
+          "distanceText": {
+            "ru": "≈ 500 м",
+            "kz": "≈ 500 м",
+            "en": "≈ 500 m"
+          },
+          "targetComplexSlug": "03_nygmet",
+          "stemHeight": 46
         }
       ],
       "polygons": [
@@ -1285,7 +1353,8 @@
               "pitch": -23.32
             }
           ],
-          "targetSceneId": "pano24632"
+          "targetSceneId": "pano24632",
+          "phaseId": "q3"
         },
         {
           "id": "spotpolygon20714",
@@ -1394,7 +1463,8 @@
               "pitch": -14.11
             }
           ],
-          "targetSceneId": "pano24632"
+          "targetSceneId": "pano24632",
+          "phaseId": "q2"
         },
         {
           "id": "spotpolygon20774",
@@ -1692,7 +1762,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q4"
         },
         {
           "id": "spotpoint20718",
@@ -1710,7 +1781,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q3"
         },
         {
           "id": "spotpoint20719",
@@ -1728,7 +1800,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q2"
         },
         {
           "id": "spotpoint20721",
@@ -1746,7 +1819,8 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q1"
         },
         {
           "id": "spotpoint20776",
@@ -1764,7 +1838,36 @@
             "en": "Business Class"
           },
           "targetSceneId": "pano24632",
-          "linkVariant": "dive-yard"
+          "linkVariant": "dive-yard",
+          "phaseId": "q5"
+        },
+        {
+          "id": "xlink_nygmet",
+          "type": "complex-link",
+          "yaw": -123,
+          "pitch": -15.5,
+          "title": {
+            "ru": "ЖК NYGMET",
+            "kz": "NYGMET ТК",
+            "en": "NYGMET Residence"
+          },
+          "subtitle": {
+            "ru": "Бизнес-класс",
+            "kz": "Бизнес-класс",
+            "en": "Business Class"
+          },
+          "description": {
+            "ru": "ул. Нурмакова, 1а / ул. Гоголя",
+            "kz": "Нұрмақов к-сі, 1а / Гоголь к-сі",
+            "en": "Nurmakov St, 1a / Gogol St"
+          },
+          "distanceText": {
+            "ru": "≈ 500 м",
+            "kz": "≈ 500 м",
+            "en": "≈ 500 m"
+          },
+          "targetComplexSlug": "03_nygmet",
+          "stemHeight": 46
         }
       ],
       "polygons": [
@@ -1891,7 +1994,8 @@
               "pitch": -13.03
             }
           ],
-          "targetSceneId": "pano24632"
+          "targetSceneId": "pano24632",
+          "phaseId": "q1"
         },
         {
           "id": "spotpolygon20723",
@@ -2024,7 +2128,8 @@
               "pitch": -17.48
             }
           ],
-          "targetSceneId": "pano24632"
+          "targetSceneId": "pano24632",
+          "phaseId": "q2"
         }
       ]
     },
@@ -2909,7 +3014,7 @@
           "id": "kv_23d69a94_step_3",
           "type": "step",
           "yaw": 131.41,
-          "pitch": -3,
+          "pitch": -16.5,
           "title": {
             "ru": "Кухня",
             "kz": "Ас үй",
@@ -2924,8 +3029,8 @@
         {
           "id": "kv_23d69a94_to_kv_22d27ced",
           "type": "step",
-          "yaw": -0.68,
-          "pitch": -3,
+          "yaw": -2,
+          "pitch": -11.5,
           "title": {
             "ru": "Ванная",
             "kz": "Жуынатын бөлме",
@@ -2940,8 +3045,8 @@
         {
           "id": "kv_23d69a94_to_kv_c769888d",
           "type": "step",
-          "yaw": 13.66,
-          "pitch": -3,
+          "yaw": 8.5,
+          "pitch": -11.5,
           "title": {
             "ru": "Спальня",
             "kz": "Жатын бөлме",
@@ -2973,7 +3078,7 @@
           "id": "kv_23d69a94_exit_corridor",
           "type": "step",
           "yaw": -141.16,
-          "pitch": -3,
+          "pitch": -16.5,
           "title": {
             "ru": "Выйти в коридор этажа",
             "kz": "Дәлізге шығу",
@@ -2988,8 +3093,8 @@
         {
           "id": "kv_23d69a94_step_1",
           "type": "step",
-          "yaw": 1.27,
-          "pitch": -24.28,
+          "yaw": 1.5,
+          "pitch": -19,
           "title": {
             "ru": "Коридор",
             "kz": "Дәліз",
@@ -3043,8 +3148,8 @@
         {
           "id": "kv_2355978f_to_kv_c76abea7",
           "type": "step",
-          "yaw": -37.29,
-          "pitch": -4.79,
+          "yaw": -36,
+          "pitch": -17,
           "title": {
             "ru": "Кухня",
             "kz": "Ас үй",
@@ -3059,8 +3164,8 @@
         {
           "id": "kv_2355978f_to_kv_c32100f7",
           "type": "step",
-          "yaw": 26.88,
-          "pitch": -3,
+          "yaw": 24,
+          "pitch": -14.5,
           "title": {
             "ru": "Детская",
             "kz": "Балалар бөлмесі",
@@ -3075,8 +3180,8 @@
         {
           "id": "kv_2355978f_step_2",
           "type": "step",
-          "yaw": -22.29,
-          "pitch": -21.05,
+          "yaw": -23,
+          "pitch": -20,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -3091,8 +3196,8 @@
         {
           "id": "kv_2355978f_step_1",
           "type": "step",
-          "yaw": 19.11,
-          "pitch": -21.7,
+          "yaw": 21,
+          "pitch": -21,
           "title": {
             "ru": "Коридор",
             "kz": "Дәліз",
@@ -3147,7 +3252,7 @@
           "id": "kv_c76abea7_step_1",
           "type": "step",
           "yaw": 130.92,
-          "pitch": -3,
+          "pitch": -16.5,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -3202,7 +3307,7 @@
           "id": "kv_c769888d_step_1",
           "type": "step",
           "yaw": -87.12,
-          "pitch": -3,
+          "pitch": -16.5,
           "title": {
             "ru": "Коридор",
             "kz": "Дәліз",
@@ -3256,8 +3361,8 @@
         {
           "id": "kv_c32100f7_to_kv_22312fd6",
           "type": "step",
-          "yaw": 79.69,
-          "pitch": -3,
+          "yaw": 79,
+          "pitch": -21,
           "title": {
             "ru": "Душевая",
             "kz": "Душ бөлмесі",
@@ -3272,8 +3377,8 @@
         {
           "id": "kv_c32100f7_step_1",
           "type": "step",
-          "yaw": 95.73,
-          "pitch": -3,
+          "yaw": 95,
+          "pitch": -22,
           "title": {
             "ru": "Коридор",
             "kz": "Дәліз",
@@ -3336,7 +3441,7 @@
           "id": "kv_22312fd6_step_1",
           "type": "step",
           "yaw": -164.82,
-          "pitch": -6,
+          "pitch": -18,
           "title": {
             "ru": "Детская",
             "kz": "Балалар бөлмесі",
@@ -3399,7 +3504,7 @@
           "id": "kv_22d27ced_step_1",
           "type": "step",
           "yaw": -172.21,
-          "pitch": -3.85,
+          "pitch": -16.93,
           "title": {
             "ru": "Коридор",
             "kz": "Дәліз",
@@ -3462,7 +3567,7 @@
           "id": "kv_22cdbce2_step_3",
           "type": "step",
           "yaw": 36.35,
-          "pitch": -3,
+          "pitch": -16.5,
           "title": {
             "ru": "Спальня",
             "kz": "Жатын бөлме",
@@ -3477,8 +3582,8 @@
         {
           "id": "kv_22cdbce2_to_kv_c76abea7",
           "type": "step",
-          "yaw": 166.16,
-          "pitch": -4.76,
+          "yaw": 160.5,
+          "pitch": -19,
           "title": {
             "ru": "Кухня",
             "kz": "Ас үй",
@@ -3494,7 +3599,7 @@
           "id": "kv_22cdbce2_step_5",
           "type": "step",
           "yaw": -1.84,
-          "pitch": -3,
+          "pitch": -16.5,
           "title": {
             "ru": "Ванная",
             "kz": "Жуынатын бөлме",
@@ -3510,7 +3615,7 @@
           "id": "kv_22cdbce2_step_4",
           "type": "step",
           "yaw": -52.43,
-          "pitch": -3,
+          "pitch": -16.5,
           "title": {
             "ru": "Детская",
             "kz": "Балалар бөлмесі",
@@ -3525,8 +3630,8 @@
         {
           "id": "kv_22cdbce2_step_1",
           "type": "step",
-          "yaw": 176.51,
-          "pitch": -24.84,
+          "yaw": 178,
+          "pitch": -23,
           "title": {
             "ru": "Прихожая",
             "kz": "Кіреберіс",
@@ -3672,6 +3777,104 @@
         "kv_22d27ced",
         "kv_22cdbce2"
       ]
+    },
+    "tone": "dark"
+  },
+  "phases": [
+    {
+      "id": "q1",
+      "title": {
+        "ru": "1 очередь",
+        "kz": "1 кезек",
+        "en": "Phase 1"
+      },
+      "subtitle": {
+        "ru": "Бизнес-класс",
+        "kz": "Бизнес-класс",
+        "en": "Business Class"
+      },
+      "aeroView": {
+        "sceneId": "pano20624",
+        "yaw": 89.97,
+        "pitch": -19.91,
+        "fov": 30
+      }
+    },
+    {
+      "id": "q2",
+      "title": {
+        "ru": "2 очередь",
+        "kz": "2 кезек",
+        "en": "Phase 2"
+      },
+      "subtitle": {
+        "ru": "Бизнес-класс",
+        "kz": "Бизнес-класс",
+        "en": "Business Class"
+      },
+      "aeroView": {
+        "sceneId": "pano20624",
+        "yaw": 73.37,
+        "pitch": -15.43,
+        "fov": 30
+      }
+    },
+    {
+      "id": "q3",
+      "title": {
+        "ru": "3 очередь",
+        "kz": "3 кезек",
+        "en": "Phase 3"
+      },
+      "subtitle": {
+        "ru": "Бизнес-класс",
+        "kz": "Бизнес-класс",
+        "en": "Business Class"
+      },
+      "aeroView": {
+        "sceneId": "pano20624",
+        "yaw": 59.82,
+        "pitch": -15.23,
+        "fov": 30
+      }
+    },
+    {
+      "id": "q4",
+      "title": {
+        "ru": "4 очередь",
+        "kz": "4 кезек",
+        "en": "Phase 4"
+      },
+      "subtitle": {
+        "ru": "Бизнес-класс",
+        "kz": "Бизнес-класс",
+        "en": "Business Class"
+      },
+      "aeroView": {
+        "sceneId": "pano20624",
+        "yaw": 52.04,
+        "pitch": -11.89,
+        "fov": 30
+      }
+    },
+    {
+      "id": "q5",
+      "title": {
+        "ru": "5 очередь",
+        "kz": "5 кезек",
+        "en": "Phase 5"
+      },
+      "subtitle": {
+        "ru": "Бизнес-класс",
+        "kz": "Бизнес-класс",
+        "en": "Business Class"
+      },
+      "aeroView": {
+        "sceneId": "pano20624",
+        "yaw": 47.32,
+        "pitch": -10.49,
+        "fov": 30
+      }
     }
-  }
+  ]
 }

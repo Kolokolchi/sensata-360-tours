@@ -104,7 +104,7 @@
     <p class="lede"><b>Жилые комплексы в одном окне.</b> Аэропанорамы, дворы, холлы и квартиры — выберите объект и переключайтесь между ними без перезагрузки.</p>
   </header>
   <nav class="panels" id="panels" aria-label="Жилые комплексы"></nav>
-  <div class="foot" id="foot">Сборка от 23.11.2026</div>
+  <div class="foot" id="foot">Сборка от 25.11.2026</div>
 </main>
 
 <section class="tour" aria-label="Тур">
@@ -188,6 +188,18 @@
     frame.src = './' + encodeURIComponent(slug) + '/index.html?fill=1';
   }
   frame.addEventListener('load', () => { if (current) setTimeout(() => veil.classList.add('hide'), 350); });
+  // A sign in one tour opened a neighbouring complex inside the frame: follow it in the
+  // tabs, title and address without loading the tour a second time
+  window.addEventListener('message', (e) => {
+    const d = e.data;
+    if (e.source !== frame.contentWindow || !d || d.source !== 'sensata-3d-tour' || d.type !== 'tour:openComplex') return;
+    const t = TOURS.find((x) => x.slug === d.targetSlug);
+    if (!t) return;
+    current = t.slug;
+    document.title = t.title + ' — 3D-тур 360° | Sensata Group';
+    rail.querySelectorAll('.tab').forEach((b) => b.setAttribute('aria-current', String(b.dataset.slug === t.slug)));
+    history.replaceState(null, '', '#' + encodeURIComponent(t.slug));
+  });
   $('home').addEventListener('click', () => { history.pushState(null, '', location.pathname + location.search); show(null); });
   window.addEventListener('hashchange', () => show(decodeURIComponent(location.hash.slice(1))));
   window.addEventListener('keydown', (e) => {
